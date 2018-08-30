@@ -18,44 +18,47 @@ body, html{
 margin: 0 auto;
 font-family: 'Open Sans', sans-serif; }
 }
-body{
-width: 100vw;  
+body {
+    min-width: 1201px; 
+    max-width: 1361px;
+    font-size: 100%;
 }
 strong{
 	color: #81d27a;
 }
 #navfixe span {
   	width: 285px;
-  	height: 9vh;
   	background-color: #fff;
-    padding-top: 9px;
+  	height: 9.5vh;
+    padding-top: 4px;
     text-align: center;
     transition:  all 0.6s ease; 
+    box-sizing: border-box;
 }
 #navfixe a {
     text-decoration: none;
-    color: #664730;
+    color: #068445;
 }
 #navfixe{
-	width: 99vw;
-	height: 9vh;
+	width: 100vw;
+	height: 11vh;
 	position: fixed;
 	z-index: 99;
+	left: 0vw;
 	top:0;
 	display:flex;
-	font-size: 1.2rem;
-	background-color: #fff;
+	font-size: 1.2rem;	
   	font-family: 'Fredericka the Great', cursive;
 	justify-content: space-around;
-	box-sizing: content-box;
-	border: 7px solid transparent;
-	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
+	border: 6px solid transparent;
+	border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
 	vertical-align: center;	
 }
-#navfixe img{
-	position: relative;
-	width:29%;
-	top: -5px;
+#navfixe img {
+    position: relative;
+    top: -1.4vh;
+    width: 80px;
+    vertical-align: top;
 }
 #navfixe span{
 	padding-top: 11px;
@@ -70,7 +73,7 @@ strong{
 #one{
 	width: 100%;
 	height: 30vh;
-	margin-top: 15vh;
+	margin-top: 19vh;
 }
 #one h1{
 	font-family: 'Fredericka the Great', cursive;
@@ -109,11 +112,11 @@ strong{
 
 #two ul{
 	position: relative;
-	bottom: 20vh;
+	bottom: 30vh;
 	z-index: 1;
 	margin: 0 auto;
 	padding: 0;
-	width: 90vh;
+	width: 90vw;
 	display: flex;
 	justify-content: space-around;
 }
@@ -122,6 +125,7 @@ strong{
 }
 #two a{
 	text-decoration: none;
+	width: 90vw;
 	color: #fff;
 	font-weight: bold;
 	font-family: 'Fredericka the Great', cursive;
@@ -144,12 +148,13 @@ h2{
 }
 #three .ardoise{
 	margin-top: 10vh;
-margin-bottom: 15vh;
+	margin-bottom: 15vh;
     width: 500px;
     height: 350px;
     background-color: #000;
     border: 17px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
+    transition: all 0.7s ease-in-out;
 }
 #three .ardoise p {
 	padding: 15px 20px 0px 20px;
@@ -158,7 +163,7 @@ margin-bottom: 15vh;
     text-align: center;
 }
 #three .ardoise p:last-child{
-margin-top: 10vh;
+margin-top: 10%;
 }
 
 #three .ardoise a {
@@ -226,34 +231,17 @@ margin-top: 10vh;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-    height: 50vh;
-    background-image: url(images/abstract-backdrop-background-129733.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 2vh 1vw;
+     height: 60vh;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
  
 }
 
 footer .content {
-	padding-top: 1vh;
+
+	margin-top: 1vh;
     margin-left: 1vw;
     display: flex;
     justify-content: space-between;
@@ -261,18 +249,18 @@ footer .content {
 
 footer .content h4 {
     margin: 0 auto;
-    padding-left: 4vw;
     letter-spacing: 2px;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Fredericka the Great', cursive;
     text-align: left;
-    color: #f5fc0e;
+    color: #068445;
 }
 
 footer #lieu {
     text-align: left;
-    margin-left: 26vw;
+    margin-top: 2vh;
+    margin-left: 30vw;
 }
 
 
@@ -283,12 +271,12 @@ footer p {
     margin-bottom: 0;
     margin-top: 5px;
     width: 25vw;
-    color: #fff;
+    color: #664730;
 }
 footer i {
     padding: 0px;
     font-size: 1.5rem;
-    color: #fff;
+    color: #664730;
     transition: all 0.7s ease;
 }
 
@@ -302,12 +290,15 @@ footer .fa-instagram:hover {
     color: #b70786;
 }
 footer #fbk:hover {
+    text-decoration: none;
     color: #2c4290;
 }
 footer #twit:hover {
+    text-decoration: none;
     color: #1f9ceb;
 }
 footer #insta:hover {
+    text-decoration: none;
     color: #b70786;
 }
 
@@ -316,7 +307,7 @@ footer #contact{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-	margin-top: 5vh;
+	margin-right: 5vw;
     padding-left: 0;
     margin-left: 0;
 }
@@ -324,29 +315,31 @@ footer #contact h4:last-of-type{
 margin-top: 5vh;
 display: flex;
 flex: wrap;
-  padding-right: 1vw;
+padding-right: 1vw;
 }
 footer #contact p{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex: wrap;
     padding-right: 1vw;
 }
 
 footer .reseau {
-    margin-top: 30px;
     display: flex;
+    align-content: center;
     justify-content: space-around;
 }
 footer img {
     width: 48px;
     height: 48px;
     transition: all 0.3s ease;
+
 }
 footer #livraison {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 1vh;
+    width: 55px;
+    height: 55px;
+    margin-right: 15vw;
+
 }
 footer #plan {
 	margin: 4vh 1vw;
@@ -363,17 +356,23 @@ footer .adresse {
 }
 footer .venir i{
 	font-size: 1.1rem;
-	color:#f5fc0e;
+	color:#068445;
 }
 footer .venir{
 	padding-left: 2vw;
 }
 footer a {
     text-decoration: none;
-    color: #fff;
+    color: #664730;
+    align-items: center;
 }
 footer a img:hover {
     transform: scale(1.2);
+}
+footer #presta{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8vw;
 }
 
 /*menu burger*/
@@ -460,9 +459,9 @@ aside a{
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1140px){
-	footer{
-    height: 45vh;
+@media screen and (min-width: 992px) and (max-width: 1200px){
+footer{
+    height: 75vh;
 }
 footer .content{
 display: flex;
@@ -477,14 +476,72 @@ footer h4 {
     font-size: 1.3rem;
 }
 
-footer p {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
-    color: #fff;
+footer #contact{    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90vw;    
+}
+
+footer #contact h4{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 40vw;
+}
+ footer #contact p{
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+footer .adresse {
+    width: 95vw;
+    justify-content: flex-start;
+}
+
+footer .venir p{
+    width: 30vw;
+}
+footer .reseau{
+    margin-top: 20px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+#three .ardoise{
+	
+    width: 400px;
+    height: 280px;
+}
+#three .ardoise p:last-child{
+margin-top: 5%;
+}
+
+#photo1 {
+    margin-left: 4.5%;
+
+}
+#three .conteneur{
+	
+	font-size: 1.2rem;
+	
+}
+footer{
+    height: 75vh;
+}
+footer .content{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+footer  #lieu{
+    text-align: center;
+    margin: 0 auto;
+}
+footer h4 {
+    font-size: 1.3rem;
 }
 
 footer #contact{    
@@ -508,23 +565,6 @@ width: 40vw;
     text-align: center;
  }
 
-footer #livraison {
-    position: relative;
-    bottom: 14.5vh;
-    right: 85vw;
-    width: 58px;
-    height: 58px;
-    margin-bottom: 1vh;
-}
-footer #antigachi {
-    position: relative;
-    bottom: 14vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
 footer .adresse {
     width: 95vw;
     justify-content: flex-start;
@@ -533,90 +573,56 @@ footer .adresse {
 footer .venir p{
     width: 30vw;
 }
-footer .fa-facebook-f{
-  margin-left: 15vw;
+footer .reseau{
+    margin-top: 20px;
 }
 
 
-@media screen and (min-width: 720px) and (max-width: 991px){
-	footer{
-    height: 45vh;
-}
-footer .content{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-footer  #lieu{
-    text-align: center;
-    margin: 0 auto;
-}
-footer h4 {
-    font-size: 1.3rem;
 }
 
-footer p {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
+
+@media screen and (max-width: 767px){
+body{
+    font-size: 120%;
+}
+
+#one{
+	margin-top: 7vh;
+}
+
+#one p:first-of-type{
+	padding: 5px 5vw 0px 5vw;
+}
+
+#photo1 {
+    margin-left: 4.5%;
+}
+#three .ardoise{
+	
+    width: 350px;
+    height: 240px;
+}
+#three .conteneur{
+	
+	font-size: 1rem;	
+}	
+#three .polaroid{
+	margin: 0vh 5vw 5vh 5vw;
+	width:35%;
+}
+#three .ardoise p {
+	padding: 3px 10px 0px 10px;
+    font-size: 1rem;
     color: #fff;
-}
-
-footer #contact{    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-right: 0vw;
-    width: 90vw;
     text-align: center;
 }
-
-footer #contact h4{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 40vw;
+#three .ardoise p:last-child{
+margin-top: 5%;
 }
- footer #contact p{
-    width: 40vw;
-    text-align: center;
- }
-
-footer #livraison {
-    position: relative;
-    bottom: 14.5vh;
-    right: 90vw;
-    width: 58px;
-    height: 58px;
-    margin-bottom: 1vh;
+#navfixe{
+    top: -2000vh;
+    display: none;
 }
-footer #antigachi {
-    position: relative;
-    bottom: 14vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
-footer .adresse {
-    width: 95vw;
-    justify-content: flex-start;
-}
-
-footer .venir p{
-    width: 30vw;
-}
-footer .fa-facebook-f{
-  margin-left: 10vw;
-}
-
-@media screen and (min-width: 400px) and (max-width: 719px){
-
 #burger{
     display:block;
     height: 25px;
@@ -633,17 +639,17 @@ aside ul{
 }
 aside li a{
     font-size: 1rem;
+    font-weight: bold;
 text-align: center;
 }
 
 .active{
     overflow:visible;
     top: 8.5vh;
-
- }
+}
 
  footer{
-    height: 85vh;
+    height: 100%;
 }
 footer .content{
 display: flex;
@@ -665,7 +671,7 @@ footer p {
     margin-bottom: 0;
     margin-top: 5px;
     width: 25vw;
-    color: #fff;
+    color: #664730;
 }
 
 footer #contact{    
@@ -688,41 +694,16 @@ width: 40vw;
     width: 40vw;
     text-align: center;
  }
-
-footer #livraison {
-    position: relative;
-    bottom: 19vh;
-    right: 3vw;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1vh;
-}
-footer #antigachi {
-    position: relative;
-    bottom: 7vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
 footer .adresse {
-    width: 95vw;
+    width: 90%;
     justify-content: flex-start;
 }
 
 footer .venir p{
-    width: 30vw;
+    width: 100%;
 }
 
-footer #twit a{
-    width: 35vw;
+footer .reseau {
+    font-size: 1rem;
 }
-footer #fbk a{
-    width: 35vw;
-padding-left: 15vw;
-}
-footer #insta a{
-    width: 35vw;
-    margin-left: 15vw;
 }

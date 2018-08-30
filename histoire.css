@@ -23,43 +23,41 @@ body {
     max-width: 1361px;
     font-size: 100%;
 }
-strong{
-	color: #81d27a;
-}
-#navfixe{
-	width: 100vw;
-	height: 11vh;
-	position: fixed;
-	z-index: 100;
-	left: 0vw;
-	top:0;
-	display:flex;
-	font-size: 1.2rem;	
-	background-color: #fff;
-  	font-family: 'Fredericka the Great', cursive;
-	justify-content: space-around;
-	border: 6px solid transparent;
-	border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
-	vertical-align: center;	
-}
+
 #navfixe span {
   	width: 285px;
   	background-color: #fff;
-  	height: 8.6vh;
+  	height: 9.4vh;
     padding-top: 4px;
     text-align: center;
     transition:  all 0.6s ease; 
     box-sizing: border-box;
 }
-#navfixe img {
-    position: relative;
-    top: 0vh;
-    width: 80px;
-    vertical-align: top;
-}
 #navfixe a {
     text-decoration: none;
     color: #068445;
+}
+#navfixe{
+	width: 100vw;
+	height: 11vh;
+	position: fixed;
+	z-index: 99;
+	left: 0vw;
+	top:0;
+	display:flex;
+	font-size: 1.2rem;	
+  	font-family: 'Fredericka the Great', cursive;
+	justify-content: space-around;
+	border: 6px solid transparent;
+	border-image: url(images/abstract-backdrop-background-129733.jpg)100 round;
+	vertical-align: center;	
+}
+#navfixe img {
+    position: relative;
+    z-index: 3
+    top: 0vh;
+    width: 80px;
+    vertical-align: top;
 }
 
 #navfixe span:hover{
@@ -68,177 +66,150 @@ strong{
 #navfixe span a:hover{
 	color:#81d27a;
 }
-#one{
-	width: 100%;
-	height: 30vh;
+
+h1{
 	margin-top: 15vh;
-}
-#one h1{
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 1.4rem;
-	letter-spacing: 2px;
-	color: 	#664730;
 	text-align: center;
-}
-#one p:first-of-type{
-	padding: 20px 20vw 0px 20vw;
-	margin: 0;
-	font-size: 1.1rem;
+	letter-spacing: 2px;
 	color: #664730;
-	font-weight: normal;
-	text-align: center;
 }
-#one .strong{
-	text-align: center;
+#one h2{
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.2rem;
+	text-align: left;
+	letter-spacing: 1px;
+	color: #664730;
+}
+#one div{
+width: 90%;
+padding-left: 0px;
+margin-left: 80px;
+border-bottom: 1px solid #664730;
+}
+#one p{
+	width: 75%;
+	text-align: justify;
+
+}
+#one .julien p{
+	margin-left: 5px;
+	color: #664730;
+}
+#one .julie p{
+	margin-right: 5px;
+	color: #664730;
+}
+#one .julien img{
+	width: 15%;
+	height: 15%;
+}
+#one .julie img{
+	width: 17%;
+	height: 17%;
 }
 
- .paragraphe p{
- 	font-size:1.2rem;
- 	width: 40%;
-	position: relative;
-	left: 40vw;
-	bottom: 50vh;
-	letter-spacing: 2px;
-	color: 	#664730;
-	text-align: center;
+#one span{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3vh;
+	margin-right: 10vw;
 }
-.paragraphe #face p{
-	left: 10vw;
-}
-
-.fond{
-	margin-left: 8vw;
-	width: 46vh;
-	height: 50vh;
-	background-image: url(images/healthy-beet-juice_373x@2x.progressive.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
-#face .fond{
-	background-image: url(images/monika-grabkowska-317238-unsplash.jpg);
-	margin-left: 65vw;
-}
-
-#instagr .fond{
-	background-image: url(images/rawpixel-698610-unsplash.jpg);
-}
-.lumiere{
-	position: relative;
-	top: 1.2vh;
-	left: 1.5vh;
-	background-color: #fff;
-	border-radius: 5px;
-	opacity: 0.5;
-	width: 93%;
-	height: 47vh;
-	border: 1px solid #f5fc0e;
-}
-#rond{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: #fff;
-	position: relative;
-	bottom: 54vh;
-	left: 84vw;
-	box-shadow: 1px 1px 1px 1px #eee;
-}
-#rond1{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: #fff;
-	position: relative;
-	bottom: 54vh;
-	left: 28vw;
-	box-shadow: 1px 1px 1px 1px #eee;
-}
-#rond2{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: #fff;
-	position: relative;
-	bottom: 54vh;
-	left: 28vw;
-	box-shadow: 1px 1px 1px 1px #eee;
-}
-
-#face .fa-facebook-f{
-	color: #2c4290;
-	font-size: 3rem;
-	position: relative;
-	z-index: 90;
-	bottom: 64vh;
-	left: 86.5vw;
-}
-
-#twitt .fa-twitter{
-    color: #1f9ceb;
-    font-size: 3rem;
-    position: relative;
-    z-index: 90;
-    bottom: 64vh;
-    left: 30vw;
-}
-#instagr .fa-instagram{
-    color: #b70786;
-    font-size: 3rem;
-    position: relative;
-    z-index: 90;
-    bottom: 64vh;
-    left: 30vw;
-}
-#twitt, #face, #instagr{
-	height: 60vh;
-	width: 90vw;
+#one span:last-of-type{
+	margin: 3vh 10vw 5vh 6vw
 }
 
 #two{
-	width: 100vw;
-	height: 70vh;
-    background-image: url(images/clem-onojeghuo-108720-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-#two #nuance{
 	width: 100%;
-	height: 100%;
-	background-color: #000;
-    opacity: 0.6;
+	height: 100vh;
+	background-image: url(images/restauintérieur2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
-#two #pitch{
+
+#three{
 	width: 100%;
-	position: relative;
-	bottom: 70vh;
-	color: #fff;
-	font-weight: bold;
+	height: 80vh;
+}
+#three div{
+	display: flex;
+	justify-content: center;
+}
+
+#four{
+	width: 100%;
+	height: 60vh;
+	background-image: url(images/arbre.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#five{
+	width: 100%;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.6rem;
-	letter-spacing: 2px;
-}
-#pitch h2{
-	width: 90vw;
-	padding-top: 9vh;
-	left: 40vw;
-	text-align: center;
-	margin: 0 auto;
-}
-#two .merci{
-	width: 99.5%;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	position: relative;
-	margin-top: 30px;
-	font-weight: normal;
-	border: 2px solid #fff;
-	padding-left: 10vw;
 	font-size: 1rem;
+	text-align: left;
+	letter-spacing: 1px;
+	font-weight: normal;
+	color: #664730;  
+	padding: 5%;
 }
+#five h2{
+	margin-top: 50px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#five p{
+	width:90vw;
+	margin: 0;
+	text-align: center; 
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: none; 
+}
+#five #explain p{
+	width: 500px;
+	padding-left: 3%;
+	padding-right:3%;
+	text-align: justify;
+	
+}
+#five #explain{
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+#five ul{
+	padding-left: 5%;
+	width: 90%;
+	text-align: justify;
+	padding-bottom: 50px;
+	padding-right: : 5%;
+}
+#five li{
+
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 10px;
+	letter-spacing: none; 
+	text-align: justify;
+	padding-right: 10%;
+
+}
+
+ strong{
+	color: #81d27a;
+}
+
 
 footer {
     padding: 2vh 1vw;
@@ -384,6 +355,7 @@ footer #presta{
     margin-left: 8vw;
 }
 
+
 /*menu burger*/
 
 #burger{
@@ -449,7 +421,7 @@ aside ul{
 
     margin: 0 auto;
     padding: 0;
-    padding-top: 17px;
+
 }
 
 aside li{
@@ -468,46 +440,14 @@ aside a{
 }
 
 
-@media screen and (min-width: 994px) and (max-width: 1200px){
-
-
-#rond{
-	bottom: 54vh;
-	left: 87vw;
-
+@media screen and (min-width: 992px) and (max-width: 1200px){
+#one .julien img{
+margin-top: 4vh;
 }
-#rond1{
-	
-	bottom: 55vh;
-	left: 30vw;
-}
-#rond2{
-	bottom: 55vh;
-	left: 30vw;
-}
-#face .fa-facebook-f{
-	bottom: 64vh;
-	left: 90vw;
+#one .julie img{
+margin-top: 4vh;
 }
 
-#twitt .fa-twitter{  
-    bottom: 65.5vh;
-    left: 32.5vw;
-}
-#instagr .fa-instagram{
-    bottom: 66vh;
-    left: 33vw;
-}
-
-.paragraphe p{
- 	
- 	width: 50%;
-	left: 50%;
-	text-align: justify;
-}
-.paragraphe #face p{
-	left: 10vw;
-}
 
 footer{
     height: 75vh;
@@ -556,52 +496,28 @@ footer .venir p{
 footer .reseau{
     margin-top: 20px;
 }
-}
-@media screen and (min-width: 768px) and (max-width: 993px){
-#rond{
-	bottom: 54vh;
-	left: 81vw;
 
 }
-#rond1{
-	
-	bottom: 55vh;
-	left: 33vw;
-}
-#rond2{
-	bottom: 56vh;
-	left: 33vw;
-}
-#face .fa-facebook-f{
-	bottom: 65vh;
-	left: 85vw;
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+#one .julien p{
+	margin-left:3vw;
 }
 
-#twitt .fa-twitter{  
-    bottom: 65.5vh;
-    left: 36vw;
-}
-#instagr .fa-instagram{
-    bottom: 66vh;
-    left: 36vw;
+#one .julien img{
+	margin-top: 9vh;
+	padding-left: 4vw;
+	width: 160px;
+	height: 160px;
 }
 
- .paragraphe p{
- 	width: 55%;
-	left: 55%;
-	padding-right: 2vw;
-	text-align: justify;
+#one .julie img{
+	margin-top: 9vh;
+	padding-right: 4vw;
+	width: 160px;
+	height: 150px;
 }
-.paragraphe #face p{
-	left: 2vw;
-}
-#face .fond{
-	background-image: url(images/monika-grabkowska-317238-unsplash.jpg);
-	margin-left: 55vw;
-}
-#one p:first-of-type{
-	padding: 20px 10vw 0px 10vw;
-}
+
 
 footer{
     height: 75vh;
@@ -652,73 +568,13 @@ footer .reseau{
     margin-top: 20px;
 }
 
-
 }
+
 @media screen and (max-width: 767px){
+
 body{
     font-size: 120%;
 }
-#one {
-	margin-top: 10vh;
-
-
-}
-#one p:first-of-type{
-	padding: 15px 5vw 0px 5vw;
-}
-
-.paragraphe p{
-	font-size: 1rem;
- 	width: 95%;
-	left: 7vw;
-	text-align: center;
-	margin-top: 9vh;
-	margin-bottom: 5vh;
-	bottom: 6vh;
-}
-.paragraphe #face p{
-	left: 4%;
-	padding-top: 1vh;
-}
-#twitt .fond{
-	margin-left: 30%;
-	margin-top: 7vh;
-}
-#face .fond{
-	background-image: url(images/monika-grabkowska-317238-unsplash.jpg);
-	margin-top:9vh;
-	margin-left: 30%;
-}
-#instagr .fond{
-	margin-top: 15vh;
-	margin-left: 30%;
-}
-#rond{
-display: none;
-}
-#rond1{
-display: none;
-}
-#rond2{
-display: none;
-}
-#face .fa-facebook-f{
-position:absolute;
-top: 113vh;
-left:47vw;
-}
-
-#twitt .fa-twitter{ 
-position:absolute;
-    bottom: 50vh;
-    left: 45vw;
-}
-#instagr .fa-instagram{
-position:absolute;
-top: 188vh;
-left: 45vw;
-}
-
 	
 #navfixe{
     top: -2000vh;
@@ -744,13 +600,48 @@ aside li a{
     font-weight: bold;
 text-align: center;
 }
+
 .active{
     overflow:visible;
     top: 8.5vh;
-    z-index: 99;
- }
+}
+#one p{
+	width: 100%;
+	text-align: justify;
+}
+#one div{
+width: 80%;
+padding-left: 0px;
+margin-left: 8vw;
+border-bottom: 1px solid #664730;
+}
+#one .julien p{
+	margin-top: 35vh;
+	margin-left: 0vw;
+	color: #664730;
+}
+#one .julie p{
+	margin-top: 35vh;
+	margin-left: -47vw;
+	color: #664730;
+}
+#one .julien img{
+	position: absolute;
+	bottom: 40vh;
+	right: 30vw;
+	width: 200px;
+	height: 250px;
+}
 
- footer{
+#one .julie img{
+	position:relative;
+	bottom: 0vh;
+	right: -20vw;
+	width: 200px;
+	height: 250px;
+}
+
+footer{
     height: 100%;
 }
 footer .content{
@@ -793,8 +684,7 @@ align-items: center;
 width: 40vw;
 }
  footer #contact p{
-    width: 49vw;
-padding-left: 20px;
+    width: 40vw;
     text-align: center;
  }
 footer .adresse {

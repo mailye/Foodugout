@@ -17,49 +17,50 @@ html{
 margin: 0 auto;
 font-family: 'Open Sans', sans-serif; }
 }
-body{
-width: 100vw; 
+body {
+    min-width: 1201px; 
+    max-width: 1361px;
+    font-size: 100%;
 }
 strong{
 	color: #81d27a;
 }
 #navfixe{
-	width: 99%;
-	height: 9vh;
+	width: 100vw;
+	height: 11vh;
 	position: fixed;
-	z-index: 99;
+	z-index: 100;
+	left: 0vw;
 	top:0;
-	left: 0;
 	display:flex;
-	justify-content: space-around;
-	font-size: 1.2rem;
+	font-size: 1.2rem;	
 	background-color: #fff;
   	font-family: 'Fredericka the Great', cursive;
-	box-sizing: content-box;
-	border: 7px solid transparent;
-	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
+	justify-content: space-around;
+	border: 6px solid transparent;
+	border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
 	vertical-align: center;	
 }
-
 #navfixe span {
-  	width: 283px;
-  	height: 9vh;
+  	width: 285px;
   	background-color: #fff;
-    padding-top: 11px;
+  	height: 8.6vh;
+    padding-top: 4px;
     text-align: center;
     transition:  all 0.6s ease; 
+    box-sizing: border-box;
+}
+#navfixe img {
+    position: relative;
+    top: 0vh;
+    width: 80px;
+    vertical-align: top;
 }
 #navfixe a {
     text-decoration: none;
-    color: #664730;
+    color: #068445;
 }
 
-#navfixe img{
-	position: relative;
-	width:29%;
-	top: -5px;
-	left: -2vw;
-}
 #navfixe span:hover{
 	transform: scale(1.1);
 }
@@ -90,6 +91,7 @@ strong{
 #one p{
 	z-index: 3;
 	color: #664730;
+	width: 95%;
 	font-weight: normal;
 	text-align: center;
 	padding: 10px 100px 0px 100px;
@@ -109,15 +111,10 @@ strong{
 	margin:0 auto;
 	margin-bottom: 100px;
 	top: 5vh;
-	border: 10px solid transparent;
+	border: 15px solid transparent;
 	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
-	width: 67%;
+	width: 80%;
 	height: 70vh;
-	/*background-image: url(images/abstract-backdrop-background-129733.jpg);*/
-	box-shadow: 4px 4px 5px #bbb;
-	/*background-position: center;
-	background-size: cover;*/
-	background-repeat: no-repeat;
 	display: flex;
 	justify-content:space-around;
 }
@@ -183,7 +180,7 @@ strong{
 	position: absolute;
 	z-index: 1;
 	top: 12vh;
-	left: 35vw;
+	left: 58%;
 	background-color: #81d27a;
 	opacity: 0.9;
 }
@@ -192,13 +189,12 @@ strong{
 	height: 5vh;
 	position: absolute;
 	z-index: 1;
-	top: 42vh;
-	left: 35vw;
+	top: 41vh;
+	left: 58%;
 	background-color: #81d27a;
 	opacity: 0.9;
 }
 #petitdej  h3{
-/*	padding-left: 190px;*/
 	font-size: 1.1rem;
 	color: #fff;
 }
@@ -206,7 +202,7 @@ strong{
 #dejeuner{
 	margin:0 auto;
 	margin-top: 5vh;
-	width: 85%;
+	width: 99.9%;
 	height: 85vh;
 	border: 10px solid transparent;
 	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
@@ -225,10 +221,9 @@ color: #664730;
 }
 #dejeuner ul{
 	width: 95%;
-	height: 95%
+	height: 95%;
 	margin: 0 auto;
 	padding: 0;
-
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
@@ -258,7 +253,7 @@ color: #664730;
 	font-weight: normal;
 }
 #dejeuner .fin{
-	width: 26vw;
+	width: 30vw;
 	text-align: justify;
 }
 #dejeuner h3{
@@ -282,34 +277,36 @@ color: #664730;
 
 #three{
 	width: 100%;
-	height: 90vh;
+	height: auto;
 	background-image: url(images/luis-angel-cardoza-rojas-197878-unsplash.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: bottom;
 	background-size: cover;
+
 }
 
 #three p{
 	position: relative;
 	top: -30px;
 	color: #fff;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
-	width: 60vw;
+	width: 70vw;
 	text-align: center;
+	margin-left: -7vw;
 }
 
 #three  .pitch{
-	padding: 12vh 1vw 3vh 30vw;
+	padding: 12vh 1vw 3vh 20vw;
 	font-size: 1.4rem;
-	width: 80vw;
+	width: 95vw;
 	text-align: center;
 	font-family: 'Fredericka the Great', cursive;
 }
 #three .togoodtogo p{
-	left: -155px;
-	width: 59vw;
+	left: -8%;
+	width: 65%;
 }
 
 
@@ -317,30 +314,35 @@ color: #664730;
 	position: relative;
 	z-index: 2;
 	top: -30px;
+	right: 7vw;
 	width: 100%;
 }
 #three #antigachi{
 	position: relative;
 	z-index: 2;
 	top: -30px;
-	right: 120px;
+	right: 4vw;
 	width: 90%;
 }
 #three .fond{
 	position: absolute;
 	z-index: 1;
-	left: 15vw;
-	width: 70vw;
+	left: 10vw;
+	width: 80%;
 	height: 20vh;
 	background-color: #000;
 	opacity: 0.5;
+
+}
+#three .deux{
+	margin-top: 29vh;
 
 }
 #three .ubereat{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-left: 150px;
+	margin-left: 9%;
 }
 #three .togoodtogo{
 	display: flex;
@@ -353,16 +355,16 @@ color: #664730;
 
 
 footer {
-    height: 50vh;
-    background-image: url(images/abstract-backdrop-background-129733.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 2vh 1vw;
+    height: 60vh;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
  
 }
 
 footer .content {
-	padding-top: 1vh;
+
+	margin-top: 1vh;
     margin-left: 1vw;
     display: flex;
     justify-content: space-between;
@@ -370,18 +372,18 @@ footer .content {
 
 footer .content h4 {
     margin: 0 auto;
-    padding-left: 4vw;
     letter-spacing: 2px;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Fredericka the Great', cursive;
     text-align: left;
-    color: #f5fc0e;
+    color: #068445;
 }
 
 footer #lieu {
     text-align: left;
-    margin-left: 26vw;
+    margin-top: 2vh;
+    margin-left: 30vw;
 }
 
 
@@ -392,12 +394,12 @@ footer p {
     margin-bottom: 0;
     margin-top: 5px;
     width: 25vw;
-    color: #fff;
+    color: #664730;
 }
 footer i {
     padding: 0px;
     font-size: 1.5rem;
-    color: #fff;
+    color: #664730;
     transition: all 0.7s ease;
 }
 
@@ -411,12 +413,15 @@ footer .fa-instagram:hover {
     color: #b70786;
 }
 footer #fbk:hover {
+    text-decoration: none;
     color: #2c4290;
 }
 footer #twit:hover {
+    text-decoration: none;
     color: #1f9ceb;
 }
 footer #insta:hover {
+    text-decoration: none;
     color: #b70786;
 }
 
@@ -425,7 +430,7 @@ footer #contact{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-	margin-top: 5vh;
+	margin-right: 5vw;
     padding-left: 0;
     margin-left: 0;
 }
@@ -433,29 +438,31 @@ footer #contact h4:last-of-type{
 margin-top: 5vh;
 display: flex;
 flex: wrap;
-  padding-right: 1vw;
+padding-right: 1vw;
 }
 footer #contact p{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex: wrap;
     padding-right: 1vw;
 }
 
 footer .reseau {
-    margin-top: 30px;
     display: flex;
+    align-content: center;
     justify-content: space-around;
 }
 footer img {
     width: 48px;
     height: 48px;
     transition: all 0.3s ease;
+
 }
 footer #livraison {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 1vh;
+    width: 55px;
+    height: 55px;
+    margin-right: 15vw;
+
 }
 footer #plan {
 	margin: 4vh 1vw;
@@ -472,17 +479,23 @@ footer .adresse {
 }
 footer .venir i{
 	font-size: 1.1rem;
-	color:#f5fc0e;
+	color:#068445;
 }
 footer .venir{
 	padding-left: 2vw;
 }
 footer a {
     text-decoration: none;
-    color: #fff;
+    color: #664730;
+    align-items: center;
 }
 footer a img:hover {
     transform: scale(1.2);
+}
+footer #presta{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8vw;
 }
 
 /*menu burger*/
@@ -554,7 +567,7 @@ aside ul{
 }
 
 aside li{
-    padding: 5px 5px;
+    padding: 1vh 4vw 0vh 5vw;
     width: 100%;
     list-style: none;
 
@@ -569,9 +582,11 @@ aside a{
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1140px){
-	footer{
-    height: 45vh;
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+
+footer{
+    height: 75vh;
 }
 footer .content{
 display: flex;
@@ -586,14 +601,88 @@ footer h4 {
     font-size: 1.3rem;
 }
 
-footer p {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
-    color: #fff;
+footer #contact{    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90vw;    
+}
+
+footer #contact h4{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 40vw;
+}
+ footer #contact p{
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+footer .adresse {
+    width: 95vw;
+    justify-content: flex-start;
+}
+
+footer .venir p{
+    width: 30vw;
+}
+footer .reseau{
+    margin-top: 20px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+#three p{
+	text-align: center;
+	vertical-align: center;
+	font-size: 1rem;
+	width: 100%;
+	margin: 0;
+	margin-top: 2vh;
+}
+#three .togoodtogo{
+	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 15%;
+}
+#three #livraison{
+
+	top: -18px;
+	right: 8vw;
+	width: 115%;
+}
+#three #antigachi{
+	top: -30px;
+	right: -1vw;
+
+}
+#three  .pitch{
+	padding: 12vh 1vw 3vh 10vw;
+
+	}
+#three .ubereat{
+margin-right: 9%;
+padding-right: 2%;
+}
+footer{
+    height: 45vh;
+}
+footer .content{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+footer  #lieu{
+    text-align: center;
+    margin: 0 auto;
+}
+footer h4 {
+    font-size: 1.3rem;
 }
 
 footer #contact{    
@@ -617,23 +706,6 @@ width: 40vw;
     text-align: center;
  }
 
-footer #livraison {
-    position: relative;
-    bottom: 14.5vh;
-    right: 85vw;
-    width: 58px;
-    height: 58px;
-    margin-bottom: 1vh;
-}
-footer #antigachi {
-    position: relative;
-    bottom: 14vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
 footer .adresse {
     width: 95vw;
     justify-content: flex-start;
@@ -642,90 +714,21 @@ footer .adresse {
 footer .venir p{
     width: 30vw;
 }
-footer .fa-facebook-f{
-  margin-left: 15vw;
+footer .reseau{
+    margin-top: 20px;
 }
 
+}
+@media screen and (max-width: 767px){
+body{
+    font-size: 120%;
+}
+	
+#navfixe{
+    top: -2000vh;
+    display: none;
 
-@media screen and (min-width: 720px) and (max-width: 991px){
-	footer{
-    height: 45vh;
 }
-footer .content{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-footer  #lieu{
-    text-align: center;
-    margin: 0 auto;
-}
-footer h4 {
-    font-size: 1.3rem;
-}
-
-footer p {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
-    color: #fff;
-}
-
-footer #contact{    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-right: 0vw;
-    width: 90vw;
-    text-align: center;
-}
-
-footer #contact h4{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 40vw;
-}
- footer #contact p{
-    width: 40vw;
-    text-align: center;
- }
-
-footer #livraison {
-    position: relative;
-    bottom: 14.5vh;
-    right: 90vw;
-    width: 58px;
-    height: 58px;
-    margin-bottom: 1vh;
-}
-footer #antigachi {
-    position: relative;
-    bottom: 14vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
-footer .adresse {
-    width: 95vw;
-    justify-content: flex-start;
-}
-
-footer .venir p{
-    width: 30vw;
-}
-footer .fa-facebook-f{
-  margin-left: 10vw;
-}
-
-@media screen and (min-width: 400px) and (max-width: 719px){
-
 #burger{
     display:block;
     height: 25px;
@@ -742,17 +745,165 @@ aside ul{
 }
 aside li a{
     font-size: 1rem;
+    font-weight: bold;
 text-align: center;
 }
-
 .active{
     overflow:visible;
     top: 8.5vh;
-
+    z-index: 99;
  }
+#one h1{
+margin-top: 8vh;
+}
+#one p{	
+	padding: 10px 30px 0px 30px;
+}
+#petitdej{
+	margin-top: 10vh;
+	width: 99%;
+	height: 80vh;
+}
+#petitdej img{
+	width: 60%;
+	height: 24%;
+	margin-left: 5vw;
+
+}
+#petitdej #partieg{
+	width: 280px;
+}
+
+#petitdej span{
+
+	width: 80%;
+	right: 3vw;
+	top: 1vh;
+}
+
+#petitdej h2{
+	margin-left: 30px;
+	font-size: 1.4rem;
+	
+}
+#petitdej .encart1{
+	width: 35%;
+	top: 11.5vh;
+	opacity: 0.8;
+}
+#petitdej .encart2{
+	width: 35%;
+	top: 47.5vh;
+	opacity: 0.8;
+}
+#dejeuner{
+	margin:0 auto;
+	margin-top: 5vh;
+	width: 99%;
+	height: 100%;
+	border: 10px solid transparent;
+	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
+	box-shadow: 4px 4px 5px #bbb;
+}
+
+#dejeuner ul{
+	width: 99%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+#dejeuner li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#dejeuner img{
+display: none;
+}
+
+#dejeuner p{
+	font-size:1.1rem;
+
+}
+#dejeuner .fin{
+	width: 90%;
+	margin-top: 3vh;
+	margin-bottom: 5vh;
+}
+#dejeuner h3{
+	padding-top: 5vh;
+	margin-bottom: 0vh;
+}
+
+#dejeuner p{
+	width: 90vw;
+}
+#three{
+	height: 110vh;
+}
+#three p{
+	text-align: center;
+	vertical-align: center;
+	font-size: 1.1rem;
+	width: 100%;
+	margin: 0;
+	margin-top: 4vh;
+	padding-top: 3vh;
+} 
+#three .ubereat{
+padding-top: 7vh;
+margin-right: 9%;
+padding-right: 2%;
+height: 140px;
+overflow-y: hidden;
+overflow-y: scroll;
+}
+#three .togoodtogo{
+	display: block;
+	margin-top: 3.5vh;
+	width: 82%;
+	margin-left: 9%;
+	height: 140px;
+	overflow: scroll;
+}
+#three .togoodtogo p{
+	display: inline-block;
+	width: 75%;
+	margin-left: 9%;
+}
+
+#three #livraison{
+	position: relative;
+	z-index: 99;
+	top:-3vh;
+	left: 2vw;
+	width: 90%;
+}
+#three #antigachi{
+	position: relative;
+	z-index: 99;
+	top:-25vh;
+	left: 62vw;
+	width: 20%;
+}
+#three .pitch{
+padding: 17vh 1vw 3vh 10vw;
+}
+#three .last{
+padding: 6vh 1vw 0vh 10vw;
+}
 
  footer{
-    height: 85vh;
+    height: 100%;
 }
 footer .content{
 display: flex;
@@ -774,7 +925,7 @@ footer p {
     margin-bottom: 0;
     margin-top: 5px;
     width: 25vw;
-    color: #fff;
+    color: #664730;
 }
 
 footer #contact{    
@@ -794,44 +945,20 @@ align-items: center;
 width: 40vw;
 }
  footer #contact p{
-    width: 40vw;
+    width: 49vw;
+padding-left: 20px;
     text-align: center;
  }
-
-footer #livraison {
-    position: relative;
-    bottom: 19vh;
-    right: 3vw;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1vh;
-}
-footer #antigachi {
-    position: relative;
-    bottom: 7vh;
-    right: -5vw;
-    width: 56px;
-    height: 56px;
-    margin-bottom: 1vh;
-}
-
 footer .adresse {
-    width: 95vw;
+    width: 90%;
     justify-content: flex-start;
 }
 
 footer .venir p{
-    width: 30vw;
+    width: 100%;
 }
 
-footer #twit a{
-    width: 35vw;
+footer .reseau {
+    font-size: 1rem;
 }
-footer #fbk a{
-    width: 35vw;
-padding-left: 15vw;
-}
-footer #insta a{
-    width: 35vw;
-    margin-left: 15vw;
 }
