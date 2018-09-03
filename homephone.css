@@ -39,8 +39,8 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/backgroundsite.jpg);
-   /* height: 100vh;*/
+    background-image: url(images/backgroundsite.png);
+    height: 100vh;
 }
 
 header p {

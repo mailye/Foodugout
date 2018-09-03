@@ -17,8 +17,8 @@ $(function(){
 		sectionSelector : '.section',
 		});
 
-	var bootstrapButton = $.fn.button.noConflict() 	
-	$.fn.bootstrapBtn = bootstrapButton 	
+	// var bootstrapButton = $.fn.button.noConflict() 	
+	// $.fn.bootstrapBtn = bootstrapButton 
 
 		
 });
