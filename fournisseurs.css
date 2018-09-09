@@ -1,0 +1,552 @@
+/*saisie des fonts en rem
+saisie des largeur en vw et vh pour le responsive
+elements mis en flex pour le responsive*/
+/*	color:#664730;marron	
+	color: #f5fc0e; jaune
+	color:#068445; vert foncé
+	color:#81d27a; vert clair*/
+
+*{
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+body, html{
+
+margin: 0 auto;
+font-family: 'Open Sans', sans-serif; }
+}
+body {
+width: 100vw;
+    font-size: 100%;
+}
+
+/*barre de nav fixe*/
+
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+#navfixe{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
+}
+#navfixe span {
+    display: flex;
+ 
+    padding: 4px;
+    height: 90px;
+    align-items: center;
+    transition:  all 0.6s ease; 
+    box-sizing: border-box;
+}
+
+#navfixe span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
+}
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: -5.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+#navfixe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
+}
+
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
+}
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
+}
+
+/*menu burger*/
+
+#burger{
+	top: 2vh;
+	position: fixed;
+	padding-top: 7px;
+    left: 44%;
+	width: 66px;
+	height: 35px;
+    border-radius: 5px;
+	background-color: #f5fc0e;
+	z-index: 1;
+	cursor: pointer;
+    display: none;
+}
+ #burger .trait{
+
+	display: block;
+	width: 26px;
+	margin-left: 20px;
+	margin-top: 4px;
+	background-color: #000;
+	height: 2px;
+	border-radius: 2px;
+}
+#burger:hover .tr1{
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(50deg);
+	opacity: 0.8;
+	transition: all 0.3s;
+}
+#burger:hover .tr2{
+	display: none;
+}
+#burger:hover .tr3{
+	opacity: 0.8;
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(-50deg);
+	transition: all 0.3s ease-in;
+}
+
+aside{
+    position: fixed;
+    z-index: 3;
+    top:-100vh;
+    left: 25%;
+    width: 45vw;
+    height: 37vh;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    background-color: #f5fc0e;
+    font-family: 'Fredericka the Great', cursive;
+    box-shadow:  2px 2px 2px #ddd;
+    transition: all 0.9s ease;
+    overflow:hidden;
+
+}
+aside ul{
+
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+aside li{
+    padding: 1vh 4vw 0vh 5vw;
+    width: 100%;
+    list-style: none;
+
+}
+aside a{
+    width: 100%;
+    color: #664730;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.2rem;
+}
+h1{
+    margin: 0 auto;
+    padding-top: 49vh;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.2rem;
+    color: #f5fc0e;
+}
+#four{
+	height: 100vh;
+    background-image: url(images/food-healthy-vegetables-potatoes.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*prédsentation fournisseurs*/
+#five{
+    padding: 10vh 5vw;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+	color: #664730;
+}
+#five h3{
+    text-align: center;
+}
+#five a{
+	text-decoration: none;
+	color: #81d27a;
+	font-weight: bold;
+}
+#five img{
+    display: inline-block;
+    margin-left: 100px;
+    width: 35%;
+}
+#five div{
+    padding-left:1vw;
+    padding-right: 1vw;
+    border-right: 1px solid #eee; 
+}
+#five div:last-child{
+  border-right: none;
+}
+#five div p{
+    text-align: justify;
+}
+#trois{
+    background-image: url(images/wine-1761613_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    font-size: 2.1rem;
+    font-family: 'Fredericka the Great', cursive;
+    color:#f5fc0e ;
+    padding-top:40vh;
+    padding-left: 35vw;
+    font-weight: bold;
+}
+
+
+
+#three{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 60vh;
+    background-color: #eee;
+}
+
+#three p{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 22px;
+    text-align: center;
+    padding: 2vh 4vw;  
+}
+
+#three .pitch{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#three .deliveroo{
+    width: 50%;
+    background-image: url(images/courier-1214227_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#three .togoodtogo{
+    display: flex;
+    width: 50%;
+    background-image: url(images/Puretc1-831x593.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#three .fond2{
+    position: absolute;
+    z-index: 0;
+    background-color: #000;
+    opacity: 0.5;
+    width: 50%;
+    padding-top: 60vh;
+}
+#three a{
+    width: 200px;
+}
+
+#three #antigachi{
+width: 55%;
+position: relative;
+z-index: 1;
+}
+#three #livraison{
+width: 85%;
+position: relative;
+z-index: 1;
+}
+
+
+footer {
+    padding: 2vh 1vw;
+    height: 60vh;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
+ 
+}
+
+footer .content {
+
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content h4 {
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    color: #068445;
+}
+
+footer #lieu {
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 30vw;
+}
+
+
+footer p {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 5px;
+    width: 25vw;
+    color: #664730;
+}
+footer i {
+    padding: 0px;
+    font-size: 1.5rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+
+footer .fa-facebook-f:hover {
+    color: #2c4290;
+}
+footer .fa-twitter:hover {
+    color: #1f9ceb;
+}
+footer .fa-instagram:hover {
+    color: #b70786;
+}
+footer #fbk:hover {
+    text-decoration: none;
+    color: #2c4290;
+}
+footer #twit:hover {
+    text-decoration: none;
+    color: #1f9ceb;
+}
+footer #insta:hover {
+    text-decoration: none;
+    color: #b70786;
+}
+
+footer #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 5vw;
+    padding-left: 0;
+    margin-left: 0;
+}
+footer #contact h4:last-of-type{
+margin-top: 5vh;
+display: flex;
+flex: wrap;
+padding-right: 1vw;
+}
+footer #contact p{
+    display: flex;
+    justify-content: flex-start;
+    flex: wrap;
+    padding-right: 1vw;
+}
+
+footer .reseau {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+footer img {
+    width: 48px;
+    height: 48px;
+    transition: all 0.3s ease;
+
+}
+footer #livraison {
+    width: 55px;
+    height: 55px;
+    margin-right: 15vw;
+
+}
+footer #plan {
+    margin: 4vh 1vw;
+    height: 180px;
+    width:246px;
+    border-radius: 5px;
+    color: #fff;
+    border: 3px solid #fff;
+}
+footer .adresse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .venir i{
+    font-size: 1.1rem;
+    color:#068445;
+}
+footer .venir{
+    padding-left: 2vw;
+}
+footer a {
+    text-decoration: none;
+    color: #664730;
+    align-items: center;
+}
+footer a img:hover {
+    transform: scale(1.2);
+}
+footer #presta{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8vw;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1362px) and (max-width: 1600px){
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+
+
+}
+/*@media screen and (min-device-width: 200px) and (max-device-width: 600px){}*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+#navfixe a{
+    font-size: 1rem;
+}
+#navfixe img {
+    position: relative;
+    width: 50%;
+    top: -6px;
+}
+
+
+}
+
+
+
+/*@media screen and (min-device-width: 200px) and (max-device-width: 600px){}*/
+@media screen and (max-width: 767px){
+
+#burger{
+    display:block;
+    height: 25px;
+    width: 56px;
+    padding-top: 3px;
+}
+#burger .trait{
+   margin-left: 15px;
+    margin-top: 3px;
+}
+aside{
+    height: auto;
+    width: 220px;
+}
+aside ul{
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
+}
+aside li a{
+    font-size: 1rem;
+text-align: center;
+}
+
+.active{
+    overflow:visible;
+    top: 0vh;
+ }
+
+body{
+    font-size: 120%;
+}
+
+
+#navfixe{
+    top: -2000vh;
+    display: none;
+
+}
+
+}
+
+

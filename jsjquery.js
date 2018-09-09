@@ -12,15 +12,6 @@ $(function(){
 			}
 
 		});
-
-		$('#entete').fullpage({
-		sectionSelector : '.section',
-		});
-
-	// var bootstrapButton = $.fn.button.noConflict() 	
-	// $.fn.bootstrapBtn = bootstrapButton 
-
-		
 });
 	
 

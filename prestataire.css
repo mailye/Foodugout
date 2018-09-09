@@ -1,0 +1,466 @@
+/*saisie des fonts en rem
+saisie des largeur en vw et vh pour le responsive
+elements mis en flex pour le responsive*/
+/*	color:#664730;marron	
+	color: #f5fc0e; jaune
+	color:#068445; vert foncé
+	color:#81d27a; vert clair*/
+
+*{
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+body, html{
+
+margin: 0 auto;
+font-family: 'Open Sans', sans-serif; }
+}
+body {
+    min-width: 1201px; 
+    max-width: 1361px;
+    font-size: 100%;
+}
+
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+#navfixe{
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
+}
+#navfixe span {
+    display: flex;
+ 
+    padding: 4px;
+    height: 90px;
+    align-items: center;
+    transition:  all 0.6s ease; 
+    box-sizing: border-box;
+}
+
+#navfixe span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
+}
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: 2.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+#navfixe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
+}
+
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
+}
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
+}
+
+
+
+#burger{
+	top: 2vh;
+	position: fixed;
+	padding-top: 7px;
+    left: 44%;
+	width: 66px;
+	height: 35px;
+    border-radius: 5px;
+	background-color: #f5fc0e;
+	z-index: 1;
+	cursor: pointer;
+    display: none;
+}
+ #burger .trait{
+
+	display: block;
+	width: 26px;
+	margin-left: 20px;
+	margin-top: 4px;
+	background-color: #000;
+	height: 2px;
+	border-radius: 2px;
+}
+#burger:hover .tr1{
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(50deg);
+	opacity: 0.8;
+	transition: all 0.3s ease-in;
+}
+#burger:hover .tr2{
+	display: none;
+}
+#burger:hover .tr3{
+	opacity: 0.8;
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(-50deg);
+	transition: all 0.3s ease-in;
+}
+
+aside{
+    position: fixed;
+    z-index: 3;
+    top:-100vh;
+    left: 25%;
+    width: 45vw;
+    height: 37vh;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    background-color: #f5fc0e;
+    font-family: 'Fredericka the Great', cursive;
+    box-shadow:  2px 2px 2px #ddd;
+    transition: all 0.9s ease;
+    overflow:hidden;
+
+}
+aside ul{
+
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 17px;
+}
+
+aside li{
+    padding: 1vh 4vw 0vh 5vw;
+    width: 100%;
+    list-style: none;
+
+}
+aside a{
+    width: 100%;
+    color: #664730;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+#four{
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/arbre.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#five{
+    width: 100%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #664730;  
+    padding: 5%;
+}
+#five h2{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#five p{
+    width:90vw;
+    margin: 0;
+    text-align: center; 
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: none; 
+}
+#five #explain p{
+    width: 500px;
+    padding-left: 3%;
+    padding-right:3%;
+    text-align: justify;
+    
+}
+#five #explain{
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+#five ul{
+    padding-left: 5%;
+    width: 90%;
+    text-align: justify;
+    padding-bottom: 50px;
+    padding-right: : 5%;
+}
+#five li{
+
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    letter-spacing: none; 
+    text-align: justify;
+    padding-right: 10%;
+
+}
+
+
+footer {
+    padding: 2vh 1vw;
+    height: 60vh;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
+ 
+}
+
+footer .content {
+
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content h4 {
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    color: #068445;
+}
+
+footer #lieu {
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 30vw;
+}
+
+
+footer p {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 5px;
+    width: 25vw;
+    color: #664730;
+}
+footer i {
+    padding: 0px;
+    font-size: 1.5rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+
+footer .fa-facebook-f:hover {
+    color: #2c4290;
+}
+footer .fa-twitter:hover {
+    color: #1f9ceb;
+}
+footer .fa-instagram:hover {
+    color: #b70786;
+}
+footer #fbk:hover {
+    text-decoration: none;
+    color: #2c4290;
+}
+footer #twit:hover {
+    text-decoration: none;
+    color: #1f9ceb;
+}
+footer #insta:hover {
+    text-decoration: none;
+    color: #b70786;
+}
+
+footer #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 5vw;
+    padding-left: 0;
+    margin-left: 0;
+}
+footer #contact h4:last-of-type{
+margin-top: 5vh;
+display: flex;
+flex: wrap;
+padding-right: 1vw;
+}
+footer #contact p{
+    display: flex;
+    justify-content: flex-start;
+    flex: wrap;
+    padding-right: 1vw;
+}
+
+footer .reseau {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+footer img {
+    width: 48px;
+    height: 48px;
+    transition: all 0.3s ease;
+
+}
+footer #livraison {
+    width: 55px;
+    height: 55px;
+    margin-right: 15vw;
+
+}
+footer #plan {
+    margin: 4vh 1vw;
+    height: 180px;
+    width:246px;
+    border-radius: 5px;
+    color: #fff;
+    border: 3px solid #fff;
+}
+footer .adresse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .venir i{
+    font-size: 1.1rem;
+    color:#068445;
+}
+footer .venir{
+    padding-left: 2vw;
+}
+footer a {
+    text-decoration: none;
+    color: #664730;
+    align-items: center;
+}
+footer a img:hover {
+    transform: scale(1.2);
+}
+footer #presta{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8vw;
+}
+
+
+
+
+@media screen and (min-width: 994px) and (max-width: 1200px){
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 993px){
+
+
+ .paragraphe p{
+ 	font-size: 1rem;
+}
+.paragraphe strong{
+    font-size: 1.1rem;
+}
+#one p:first-of-type{
+	padding: 20px 10vw 0px 10vw;
+}
+
+}
+@media screen and (max-width: 767px){
+body{
+    font-size: 120%;
+}
+	
+#navfixe{
+    top: -2000vh;
+    display: none;
+
+}
+#burger{
+    display:block;
+    height: 25px;
+    width: 56px;
+    padding-top: 3px;
+}
+#burger .trait{
+   margin-left: 15px;
+    margin-top: 3px;
+
+}
+aside{
+    height: auto;
+    width: 220px;
+}
+aside ul{
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
+}
+aside li a{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.active{
+    overflow:visible;
+    top: 8.5vh;
+    z-index: 99;
+ }
+
+}

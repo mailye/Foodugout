@@ -23,81 +23,124 @@ body {
     max-width: 1361px;
     font-size: 100%;
 }
+
 strong{
-	color: #81d27a;
+    color:#664730;
+    font-size: 1.3rem;
+}
+
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+#navfixe{
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
 }
 #navfixe span {
-  	width: 285px;
-  	background-color: #fff;
-  	height: 9.5vh;
-    padding-top: 4px;
-    text-align: center;
+    display: flex;
+ 
+    padding: 4px;
+    height: 90px;
+    align-items: center;
     transition:  all 0.6s ease; 
     box-sizing: border-box;
 }
-#navfixe a {
-    text-decoration: none;
-    color: #068445;
-}
-#navfixe{
-	width: 100vw;
-	height: 11vh;
-	position: fixed;
-	z-index: 99;
-	left: 0vw;
-	top:0;
-	display:flex;
-	font-size: 1.2rem;	
-  	font-family: 'Fredericka the Great', cursive;
-	justify-content: space-around;
-	border: 6px solid transparent;
-	border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
-	vertical-align: center;	
-}
-#navfixe img {
-    position: relative;
-    top: -1.4vh;
-    width: 80px;
-    vertical-align: top;
-}
-#navfixe span{
-	padding-top: 11px;
-}
+
 #navfixe span:hover{
-	transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
 }
-#navfixe span a:hover{
-	color:#81d27a;
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: -5.5px;
+    left: 78.5vw;
 }
 
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+#navfixe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
+}
+
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
+}
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
+}
+
+
 #one{
-	width: 100%;
 	height: 30vh;
-	margin-top: 19vh;
+	margin-top: 9vh;
 }
 #one h1{
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.4rem;
+	font-size: 2.1rem;
+    text-align: center;
 	font-size: normal;
 	letter-spacing: 2px;
-	color: 	#664730;
-	text-align: center;
+	color: #f5fc0e;
+	
 }
 #one p:first-of-type{
 	padding: 20px 20vw 0px 20vw;
 	margin: 0;
-	color: 	#664730;
+	color: #664730;
 	font-weight: normal;
 	text-align: center;
-}
-#one .strong{
-	text-align: center;
+    font-size: 1.1rem;
 }
 
 #two{
-	height: 70vh;
+	height: 90vh;
     background-image: url(images/cat-cagettes.jpg);
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,7 +194,7 @@ h2{
 	margin-bottom: 15vh;
     width: 500px;
     height: 350px;
-    background-color: #000;
+    background-color: #fff;
     border: 17px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
     transition: all 0.7s ease-in-out;
@@ -159,7 +202,7 @@ h2{
 #three .ardoise p {
 	padding: 15px 20px 0px 20px;
     font-size: 1rem;
-    color: #fff;
+    color: #664730;
     text-align: center;
 }
 #three .ardoise p:last-child{
@@ -168,14 +211,16 @@ margin-top: 10%;
 
 #three .ardoise a {
     text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: bold;
+    color: #664730;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition:0.4s all ease-in-out;
 }
 
-#three .ardoise a:hover {
-    color: #f5fc0e;
+#three .ardoise p a:hover {
+    color: #068445;
+    transform: scale(1.2);
+    font-weight: bold;
 }
 
 #photo1 {
@@ -229,11 +274,21 @@ margin-top: 10%;
 #five div{
 	border-bottom: 1px solid #664730;
 }
+#fondfin{
+    height: 70vh;
+    background-image: url(images/2.-Chicken-madras-poke-bowl.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 
 footer {
     padding: 2vh 1vw;
-     height: 60vh;
+    height: 60vh;
     border: 15px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
  
@@ -241,7 +296,7 @@ footer {
 
 footer .content {
 
-	margin-top: 1vh;
+    margin-top: 1vh;
     margin-left: 1vw;
     display: flex;
     justify-content: space-between;
@@ -307,7 +362,7 @@ footer #contact{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-	margin-right: 5vw;
+    margin-right: 5vw;
     padding-left: 0;
     margin-left: 0;
 }
@@ -342,10 +397,10 @@ footer #livraison {
 
 }
 footer #plan {
-	margin: 4vh 1vw;
-	height: 180px;
-	width:246px;
-	border-radius: 5px;
+    margin: 4vh 1vw;
+    height: 180px;
+    width:246px;
+    border-radius: 5px;
     color: #fff;
     border: 3px solid #fff;
 }
@@ -355,11 +410,11 @@ footer .adresse {
     align-items: center;
 }
 footer .venir i{
-	font-size: 1.1rem;
-	color:#068445;
+    font-size: 1.1rem;
+    color:#068445;
 }
 footer .venir{
-	padding-left: 2vw;
+    padding-left: 2vw;
 }
 footer a {
     text-decoration: none;
@@ -374,6 +429,7 @@ footer #presta{
     justify-content: space-around;
     margin-left: 8vw;
 }
+
 
 /*menu burger*/
 
@@ -633,9 +689,14 @@ margin-top: 5%;
    margin-left: 15px;
     margin-top: 3px;
 
+}aside{
+    height: auto;
+    width: 220px;
 }
 aside ul{
-    padding-left: 20%;
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
 }
 aside li a{
     font-size: 1rem;

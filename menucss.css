@@ -23,49 +23,93 @@ body {
     font-size: 100%;
 }
 strong{
-	color: #81d27a;
+	font-family:'Fredericka the Great', cursive;
+	color:#664730;
+	font-size: 1.3rem;
+}
+
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
 }
 #navfixe{
-	width: 100vw;
-	height: 11vh;
-	position: fixed;
-	z-index: 100;
-	left: 0vw;
-	top:0;
-	display:flex;
-	font-size: 1.2rem;	
-	background-color: #fff;
-  	font-family: 'Fredericka the Great', cursive;
-	justify-content: space-around;
-	border: 6px solid transparent;
-	border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
-	vertical-align: center;	
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
 }
 #navfixe span {
-  	width: 285px;
-  	background-color: #fff;
-  	height: 8.6vh;
-    padding-top: 4px;
-    text-align: center;
+    display: flex;
+    padding: 4px;
+    height: 90px;
+    align-items: center;
     transition:  all 0.6s ease; 
     box-sizing: border-box;
 }
-#navfixe img {
-    position: relative;
-    top: 0vh;
-    width: 80px;
-    vertical-align: top;
+
+#navfixe span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
+}
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: -5.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
 }
 #navfixe a {
     text-decoration: none;
-    color: #068445;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
 }
 
-#navfixe span:hover{
-	transform: scale(1.1);
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
 }
-#navfixe span a:hover{
-	color:#81d27a;
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
 }
 #one{
 	width:100%;
@@ -273,84 +317,6 @@ color: #664730;
 	width: 250px;
 	padding: 0;
 	margin: 0;
-}
-
-#three{
-	width: 100%;
-	height: auto;
-	background-image: url(images/luis-angel-cardoza-rojas-197878-unsplash.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: cover;
-
-}
-
-#three p{
-	position: relative;
-	top: -30px;
-	color: #fff;
-	font-size: 1.2rem;
-	font-weight: bold;
-	width: 70vw;
-	text-align: center;
-	margin-left: -7vw;
-}
-
-#three  .pitch{
-	padding: 12vh 1vw 3vh 20vw;
-	font-size: 1.4rem;
-	width: 95vw;
-	text-align: center;
-	font-family: 'Fredericka the Great', cursive;
-}
-#three .togoodtogo p{
-	left: -8%;
-	width: 65%;
-}
-
-
-#three #livraison{
-	position: relative;
-	z-index: 2;
-	top: -30px;
-	right: 7vw;
-	width: 100%;
-}
-#three #antigachi{
-	position: relative;
-	z-index: 2;
-	top: -30px;
-	right: 4vw;
-	width: 90%;
-}
-#three .fond{
-	position: absolute;
-	z-index: 1;
-	left: 10vw;
-	width: 80%;
-	height: 20vh;
-	background-color: #000;
-	opacity: 0.5;
-
-}
-#three .deux{
-	margin-top: 29vh;
-
-}
-#three .ubereat{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin-left: 9%;
-}
-#three .togoodtogo{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-#three a{
-	width: 200px;
 }
 
 
@@ -740,8 +706,14 @@ body{
     margin-top: 3px;
 
 }
+aside{
+    height: auto;
+    width: 220px;
+}
 aside ul{
-    padding-left: 20%;
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
 }
 aside li a{
     font-size: 1rem;

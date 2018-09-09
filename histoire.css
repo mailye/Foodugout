@@ -24,103 +24,173 @@ body {
     font-size: 100%;
 }
 
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+#navfixe{
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
+}
 #navfixe span {
-  	width: 285px;
-  	background-color: #fff;
-  	height: 9.4vh;
-    padding-top: 4px;
-    text-align: center;
+    display: flex;
+    padding: 4px;
+    height: 90px;
+    align-items: center;
     transition:  all 0.6s ease; 
     box-sizing: border-box;
 }
-#navfixe a {
-    text-decoration: none;
-    color: #068445;
-}
-#navfixe{
-	width: 100vw;
-	height: 11vh;
-	position: fixed;
-	z-index: 99;
-	left: 0vw;
-	top:0;
-	display:flex;
-	font-size: 1.2rem;	
-  	font-family: 'Fredericka the Great', cursive;
-	justify-content: space-around;
-	border: 6px solid transparent;
-	border-image: url(images/abstract-backdrop-background-129733.jpg)100 round;
-	vertical-align: center;	
-}
-#navfixe img {
-    position: relative;
-    z-index: 3
-    top: 0vh;
-    width: 80px;
-    vertical-align: top;
-}
 
 #navfixe span:hover{
-	transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
 }
-#navfixe span a:hover{
-	color:#81d27a;
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: -10.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+#navfixe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
+}
+
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
+}
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
+}
+#introduction{
+    background-image: url(images/blue-jeans-blur-clothes-349494.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
 }
 
 h1{
-	margin-top: 15vh;
+    margin: 0 auto;
+	padding-top: 40vh;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.4rem;
+	font-size: 2.4rem;
 	text-align: center;
 	letter-spacing: 2px;
-	color: #664730;
+	color: #f5fc0e;
+}
+
+#one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 #one h2{
 	margin: 0;
 	padding: 0;
 	margin-top: 20px;
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.2rem;
-	text-align: left;
+    padding-top: 5px;
+	font-size: 1.4rem;
 	letter-spacing: 1px;
+    text-transform: uppercase;
 	color: #664730;
+    width: 300px;
+    text-decoration:#664730 underline ;
+    padding-bottom: 5vh;
 }
 #one div{
-width: 90%;
 padding-left: 0px;
-margin-left: 80px;
-border-bottom: 1px solid #664730;
+margin-right: 1vw;
+
 }
 #one p{
-	width: 75%;
+
 	text-align: justify;
+    padding-left: 5px;
+    color: #664730;
+}
+#one .julien div:first-child{
+    height: 50px;
+    width: 300px;
+     background-color: #e6f2f7;
+}
+#one .julien{
+    padding-left: 4vw;
+   
+    padding-right: 2.5vw;
+    text-align: center;
 
 }
-#one .julien p{
-	margin-left: 5px;
-	color: #664730;
+#one .julie div:first-child{
+    height: 50px;
+    width: 300px;
+     background-color: #f7e6f6;
 }
-#one .julie p{
-	margin-right: 5px;
-	color: #664730;
+#one .julie{
+    padding-left: 4vw;
+    padding-top: 1vh;
+    text-align: center;
+    padding-right: 2.5vw;
+   
 }
+
 #one .julien img{
-	width: 15%;
-	height: 15%;
+
+    padding-top: 3vh;
+    padding-left: 15vw;
+	height: 30%;
 }
 #one .julie img{
-	width: 17%;
-	height: 17%;
-}
-
-#one span{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 3vh;
-	margin-right: 10vw;
-}
-#one span:last-of-type{
-	margin: 3vh 10vw 5vh 6vw
+    padding-top: 3vh;
+    padding-left: 15vw;
+	height: 28%;
 }
 
 #two{
@@ -135,7 +205,17 @@ border-bottom: 1px solid #664730;
 
 #three{
 	width: 100%;
-	height: 80vh;
+	height: auto;
+    margin-bottom: 5vh;
+}
+#three h2{
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #664730;
 }
 #three div{
 	display: flex;
@@ -205,9 +285,19 @@ align-items: center;
 	padding-right: 10%;
 
 }
+#last{
+    background-image: url(images/chef-1245676_1920.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
 
  strong{
-	color: #81d27a;
+font-family: 'Fredericka the Great', cursive;
+font-weight: bold;
 }
 
 
@@ -592,8 +682,14 @@ body{
     margin-top: 3px;
 
 }
+aside{
+    height: auto;
+    width: 220px;
+}
 aside ul{
-    padding-left: 20%;
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
 }
 aside li a{
     font-size: 1rem;

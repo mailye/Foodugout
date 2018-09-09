@@ -1,15 +1,18 @@
-saisie des fonts en rem
+/*saisie des fonts en rem
 saisie des largeur en vw et vh pour le responsive
-elements mis en flex pour le responsive*/
+elements mis en flex pour le responsive
 
 
-/*	color:#664730;marron	
+color:#664730;marron	
 	color:#f5fc0e; jaune
 	color:#068445; vert foncé
-	color:#81d27a; vert clair*/
+	color:#81d27a; vert clair
+*/
 
-* {
-/*    box-sizing: border-box;*/
+*{
+
+    
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -32,206 +35,321 @@ body {
     min-width: 1201px; 
     max-width: 1361px;
     font-size: 100%;
-}
-
-header {
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(images/backgroundsite.png);
-    height: 100vh;
-}
-
-header p {
-    position: absolute;
-    left: 13%;
-    bottom: 2%;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 1.1rem;
-}
-
-#reseau {
-    position: absolute;
-    top: 35%;
-    right: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
-
+ 
 }
 
 i {
-    padding: 0px 5vw;
-    padding-bottom: 70px;
-    font-size: 2.5rem;
-    color: #fff;
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
     transition: all 0.7s ease;
 }
-.fa-facebook-f:hover {
-	color:#2c4290;
+
+/*partie hero*/
+
+header {
+    position: relative;
+    background-position: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/restaurant-rouen-terrasse-2_700_490.jpg);
+    height: 100vh;
+    width: 100vw;
 }
-.fa-twitter:hover {
-	color:#1f9ceb;
-}
-.fa-instagram:hover{
-	color:#b70786;
+header #logo_central{
+position: relative;
+z-index: 2;
+margin: 0 auto;
+width: 300px;
+margin-top: 25vh;
+margin-left: 38%;
 }
 
-.texte {
+header .text {
+    position: absolute;
     margin-left: 2vw;
+    padding-top: 40vh;
     width: 15%;
     border-bottom: 3px solid #fff;
     text-align: center;
 }
-h2 {
-    color: #f5fc0e;
-    font-family: 'Open Sans', sans-serif;
+
+header #pub {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
+    bottom: -10%;
+    padding: 5%;
+    color: #fff;
     font-size: 1.1rem;
 }
+.fa-facebook-f:hover {
+    transform: scale(1.1);
+	color:#2c4290;
+}
+.fa-twitter:hover {
+	color:#1f9ceb;
+    transform: scale(1.1);
+}
+.fa-instagram:hover{
+	color:#b70786;
+    transform: scale(1.1);
+}
+header #fond{
+    position: absolute;
+    z-index: 0;
+    background-color: #000;
+    opacity:0.5;
+    width: 100vw;
+    height: 100vh;
+}
 
-#navfixe {
-    font-family: 'Fredericka the Great', cursive;
-    width: 98vw;
-    height: 9vh;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: content-box;
-    border: 6px solid #fff;
-    border-bottom: 1px solid #eee;
-    vertical-align: center;
+.texte p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*partie navefixe*/
+#navfixe{
+    width: 100vw;
     position: fixed;
     z-index: 99;
-    top: 0.5vh;
-    left: 0.5vw;
-    background-color: #fff; 
-    opacity: 0.8;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
+}
+#navfixe span {
+    display: flex;
+ 
+    padding: 4px;
+    height: 90px;
+    align-items: center;
+    transition:  all 0.6s ease; 
+    box-sizing: border-box;
+}
+
+#navfixe span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
+}
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: 2.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
 }
 #navfixe a {
     text-decoration: none;
-    font-size: 1.1rem;
-    color: #068445;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
 }
 
-#navfixe img {
-    position: relative;
-    top: -1.4vh;
-    width: 90px;
-    vertical-align: top;
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
 }
-#navfixe span {
-    width: 285px;
-    padding-top: 5px;
-    text-align: center;
-    transition: all 0.6s ease;
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
 }
-#navfixe span:hover {
-    transform: scale(1.1);
-}
-#navfixe span a:hover {
-    color: #81d27a;
-}
+
+/*Partie présentation*/
 #intro {
-    height: 100vh;
-    background-image: url(images/yuman-1.jpg);
-    opacity: 0.7;
+    height: 60vh;
+    background-image: url(images/luis-angel-cardoza-rojas-197878-unsplash.jpg);
     transition: all 0.7s ease-in;
     background-repeat: no-repeat;
-    background-position: top;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
-#intro:hover {
 
-    opacity: 1;
+#intro #description{
+    height: 80vh;
 }
-#intro:hover .description {
-    display: block;
-}
-
-#intro .description {
-
-    position: relative;
-    z-index: 1;
-    display: none;
-}
-
 #intro .encart {
     position: relative;
-    z-index: 2;
+    margin: auto;
     top: 25vh;
-    left: 21vw;
-    width: 60vw;
-    height: 45vh;
+    width: 55vw;
+    height: 50vh;
     background-color: #068445;
-    opacity: 0.7;
+    border-radius: 5px;
+    border: 5px solid #fff;
 }
 h1 {
-    top: -31vh;
-    left: 40vw;
+    position: relative;
+    bottom: 40vh;
+    left: 38vw;
     margin: 0;
     padding:0;
-    position: relative;
-    z-index: 2;
     color: #fff;
     font-size: 1.5rem;
+    font-weight: bold;
     text-shadow: 1px 1px 2px #000;
     font-family: 'Fredericka the Great', cursive;
-    font-style: italic;
 } 
-#intro img {
-    position: absolute;
-    top: 250px;
-    left: 280px;
-    width: 10vw;
-    opacity: 0.9;
-}
 #intro p {
     position: relative;
-    top: -110px;
-    z-index: 3;
+    width: 50vw;
+    left: 25vw;
+    bottom: 12vh;
     color: #fff;
     margin: 0;
-    padding: 0 23vw 20vh 33vw;
+    padding: 0;
     text-align: center;
     font-size: 1.2rem;
     font-weight: normal;
 }
+/*mise en avant des valeurs*/
 
-#intro span {
-    position: relative;
-    z-index: 3;
-    left: 57vw;
-    top: -28vh;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: normal;
+#valeur{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 }
-#intro span a {
-    text-decoration: none;
-    color: #fff;
+#valeur ul{
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
 }
-#intro span a:hover {
+#valeur ul li{
+    width: 350px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vh 3vw;
+   text-align: center;
+   color:#664730;
+   font-weight: bold;
 
-    color: #f5fc0e;
 }
+#valeur li img{
+    padding-bottom: 2vh;
+}
+
+#valeur button{
+    margin-top: 7vh;
+    cursor: pointer;
+    background-color: #f5fc0e;
+    color:#664730;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px;
+}
+/*plan*/
+
+#position{
+    background-image: url(images/pexels-photo-890577.jpeg);
+   background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+#position #plan{
+transition: 0.6s all ease-in;
+position: relative;
+top: -5vh;
+margin-left: 35vw;
+
+}
+
+#position h2{
+    margin: auto;
+    margin-top: 5vh;
+    padding-top: 20vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color:#f5fc0e;
+}
+#position #trouver{
+   /* margin-top: 15vh;*/
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#position #trouver img{
+    width: 5%;
+    margin: 0;
+    padding:0;
+}
+#position p, #position i{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#position .venir div:nth-of-type(2){
+    margin-top: 7vh;
+}
+
+
+
+/*espace citation*/
+
 #citation {
-    height: 100vh;
+    height: 90vh;
 }
 #citation p {
-    margin-top: 0;
-    padding-top: 130px;
+    margin-top: 35vh;
     margin-bottom: 0;
+    padding-bottom: 0;
     color: #664730;
     font-size: 1.7rem;
-    font-family: 'Fredericka the Great', cursive;
     text-align: center;
 }
 #citation p em {
@@ -284,82 +402,78 @@ h1 {
 
 }
 
+
+/*partie présentation plat à la une*/
+
 #cejour {
-    height: 100vh;
-    background-image: url(images/luis-angel-cardoza-rojas-197878-unsplash.jpg);
+    
+    background-image: url(images/basil-932079__480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 20px;
+    padding-bottom: 10vh;
 }
-#cejour img:first-of-type {
-    width: 65px;
-}
-.ligne{
+
+#cejour .ligne{
     position: absolute;
 	z-index: 0;
-	height: 100vh;
-	top: 0;
+	height: 80vh;
 	width: 1vw;
 	left: 28vw;
 	border-right: 1px solid #fff;
 }
-.ligne2{
+#cejour .ligne2{
 	left: 69vw;
 }
-.ardoise {
+#cejour .ardoise {
+    margin: 0;
+    position: relative;
+    z-index: 1;
     padding-top: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.ardoise .menu {
-    position: relative;
-    width: 380px;
+
+#cejour .ardoise .menu {
+    width: 400px;
     height: 280px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #000;
+    background-color: #fff;
     border: 19px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
 }
+#cejour .menu .tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-
-.ardoise p {
-    position: relative;
-    z-index: 98;
-    margin-top: 5px;
-    margin-bottom: 0;
-    bottom: 0px;
-    left: 5vw;
+}
+#cejour img:first-of-type {
+    width: 20%;
+}
+#cejour .ardoise p {
+    padding: 0px 9px 0 12px;
     font-size: 1rem;
-    color: #fff;
+    color: #664730;
 }
 
-.ardoise .lien a {
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-family: 'Fredericka the Great', cursive;
-    position: relative;
+#cejour .menu h5{
+    margin:35px;
     font-weight: bold;
-    top: 40px;
-    left: 100px;
 }
-
-.ardoise .lien a:hover {
-    color: #f5fc0e;
-}
-
-#photo1 {
+#cejour #photo1 {
     width: 90%!important;
     margin-top: 11px;
     margin-left: 11px;
+    transition: 0.4 all ease-in-out;
 }
-#photo2 {
+#cejour #photo2 {
     width: 90%!important;
  	margin-top: 8px;
     margin-left: 11px;
+
 }
 .ardoise .photoa{
     position: relative;
@@ -369,8 +483,9 @@ h1 {
 	background-color:#fff;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	margin-bottom: 25px;
-	transition: all 0.3s ease;
+	transition: all 0.4s ease-in-out;
 	transform: rotate(25deg);
+
 }
 .ardoise .photoa.float-left{
    left: -10vw;
@@ -387,151 +502,92 @@ h1 {
 	text-shadow: 1px 1px 2px #ddd;
 }
 .photoa:hover{
-	transform: rotate(0) scale(1.2);
+	transform: rotate(0);
+     transform: scale(1.2)
 }
 
 footer {
-    padding: 2vh 1vw;
-    height: 30vh;
+    padding: 2vh;
+    height: 45vh;
+    background-color: #fff;
     border: 15px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
- 
 }
 
 footer .content {
-
-	margin-top: 1vh;
-    margin-left: 1vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+footer .content .rubriques{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+    margin-left: 5vw;
+    padding-top: 2vh;
+}
+footer .mention{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .mention p{
+    padding-top: 7vh;
+    font-size: 0.8rem;
 }
 
 footer .content h4 {
     margin: 0 auto;
-    letter-spacing: 2px;
-    font-size: 1rem;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    font-family: 'Fredericka the Great', cursive;
     text-align: left;
     color: #068445;
 }
-
-footer #lieu {
-    text-align: left;
-    margin-top: 2vh;
-    margin-left: 30vw;
-}
-
-
-footer p {
-    font-size: 1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
+footer .content p{
+    font-size: 0.8rem;
     color: #664730;
+    text-align: none;
 }
-footer i {
-    padding: 0px;
-    font-size: 1.5rem;
-    color: #664730;
-    transition: all 0.7s ease;
-}
-
-footer .fa-facebook-f:hover {
-    color: #2c4290;
-}
-footer .fa-twitter:hover {
-    color: #1f9ceb;
-}
-footer .fa-instagram:hover {
-    color: #b70786;
-}
-footer #fbk:hover {
-    text-decoration: none;
-    color: #2c4290;
-}
-footer #twit:hover {
-    text-decoration: none;
-    color: #1f9ceb;
-}
-footer #insta:hover {
-    text-decoration: none;
-    color: #b70786;
-}
-
-footer #contact{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-	margin-right: 5vw;
-    padding-left: 0;
-    margin-left: 0;
-}
-footer #contact h4:last-of-type{
-margin-top: 5vh;
+footer .content .instfdg{
 display: flex;
-flex: wrap;
-padding-right: 1vw;
-}
-footer #contact p{
-    display: flex;
-    justify-content: flex-start;
-    flex: wrap;
-    padding-right: 1vw;
-}
-
-footer .reseau {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-footer img {
-    width: 48px;
-    height: 48px;
-    transition: all 0.3s ease;
+align-items: center;
+justify-content: center;
+width: 32vw;
+margin-right: 10vw;
+text-align: center;
 
 }
-footer #livraison {
-    width: 55px;
-    height: 55px;
-    margin-right: 15vw;
-
-}
-footer #plan {
-	margin: 4vh 1vw;
-	height: 180px;
-	width:246px;
-	border-radius: 5px;
-    color: #fff;
-    border: 3px solid #fff;
-}
-footer .adresse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .venir i{
-	font-size: 1.1rem;
-	color:#068445;
-}
-footer .venir{
-	padding-left: 2vw;
-}
-footer a {
+footer a{
     text-decoration: none;
     color: #664730;
-    align-items: center;
 }
-footer a img:hover {
-    transform: scale(1.2);
+footer a:hover{
+    text-decoration: none;
 }
-footer #presta{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 8vw;
+footer .fb-insta{
+    width: 30vw;
+    height: 33vh;
+    margin-left: 3vw;
+    padding: 0;
+    background-color: #eee;
+    border: 2px solid #068445;
+}
+footer .paiement img{
+    padding-top: 1vh;
+    width: 2%;
+    height: 2%;
+}
+footer .paiement .tickets{
+    width: 8%;
+    height: 11%;
+}
+footer .copy{
+    width: 1.5%;
+    height: 1.5%;
+    padding-top: 4.3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 /*menu burger*/
@@ -740,27 +796,35 @@ h1{
 }
 
 .ardoise .menu {
-    width: 335px;
-    height: 235px;
+    width: 45%;
+    height: auto;
     margin: 0;
-    margin-left: 3vw;
-    margin-right: 3vw;  
+    padding: 3%;
+    margin-left: 2vw;
+    margin-right: 2vw;  
 }
 
 .ardoise img:first-of-type {
-    width: 70px;
+    width: 90px;
     margin-left:190px;
 }
-.ardoise p {
-    top: -4vh;
-    left: 2vw;
+.menu h5{
+    color: #fff;
     font-size: 1.1rem;
-    width: 35vw;
 }
+#cejour .ardoise .menu p {
+    text-align: left;
+    font-size: 1.1rem;
 
+}
+.#cejour .menu strong{
+    text-align: right;
+}
 .ardoise .lien a {
-   top: 0px;
+    margin-top: 5vh;
+    top: 0px;
     left: 90px;
+    border: 2 solid #fff;
 }
 
 
@@ -872,9 +936,14 @@ footer .reseau{
    margin-left: 15px;
     margin-top: 3px;
 }
-
+aside{
+    height: auto;
+    width: 220px;
+}
 aside ul{
-    padding-left: 20%;
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
 }
 aside li a{
     font-size: 1rem;
@@ -884,11 +953,30 @@ text-align: center;
 .active{
     overflow:visible;
     top: 0vh;
-
  }
-
+ header{
+    background-image: url(images/IMG_2455.jpg);
+ }
+ header #fond{
+    width: 100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.7;
+   background: rgb(251,251,250);
+background: linear-gradient(180deg, rgba(251,251,250,0.2838322829131653) 2%, rgba(119,120,120,0.8104429271708684) 65%);
+ }
+ 
+ #entete header .fond img{
+    width: 1%;
+ }
+header h2{
+font-size: 1rem;
+font-weight: bold;
+    color: #fff;
+}
 header p{
-    display: none;
+    font-size: 1rem;
+    color: #fff;
 }
 body{
     font-size: 120%;
@@ -983,35 +1071,45 @@ h1 {
     
 }
 #citation .arrowbottom {
-    margin-left: 40vw;  
+    display: none;  
 }
 
 #cejour .menu img{
-    width: 100px;
-    margin-left: 24vw;
+    width: 95px;
+
    
 }
 .ardoise .menu {
     width: 100%;
-    margin-top: -5vh;
-    margin-bottom: 100px;
-    border: none;
-    border-image: none;
-    background:#068445;
- 
-}
-.ardoise p{
-left: -0.5vw;
-text-align: center;
-width: 60vw;
-bottom: 0vh;
-font-family: 'Fredericka the Great', cursive;
-font-size: 1.1rem;
+    height: 60vh;
+    padding: 4%;
+    text-align: center;
+    margin: 0 3vw 10vh 3vw;
+
+
 }
 
+.ardoise h5{
+  margin-top: 3vh;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 3vh;
+}
+
+#cejour .menu strong{
+    margin: 25vh 2vw 4vh 20vw;
+}
+
+#cejour .lien span{
+width: 150px;
+height: 50px;
+border: 2 solid #f5fc0e;
+padding-bottom: 5vh;
+}
 .ardoise .lien a{
     font-size: 1rem;
-    letter-spacing: 3px;
+    color: #f5fc0e;
+    letter-spacing: 2px;
 }
 .ligne, .ligne2{
     display: none;
