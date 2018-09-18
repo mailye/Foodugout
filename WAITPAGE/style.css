@@ -1,0 +1,35 @@
+body{
+	max-width: 1400px;
+	margin: auto;
+
+}
+h1{
+	font-family:  'Fredericka the Great', cursive;
+
+	font-size: 40px;
+	text-align: center;
+	color:#664730;
+	padding-bottom: 1vh;
+}
+
+h2{
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+text-align: center;
+color:#664730;
+
+}
+
+img{
+	margin-left: 30%;
+	margin-bottom: 10vh;
+	height:50vh;
+	margin-top: 10vh;
+}
+a{
+	color:#664730;
+}
+ h2 a:hover{
+	color:#068445;
+	text-decoration: none;
+}

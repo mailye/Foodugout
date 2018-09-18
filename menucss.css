@@ -13,7 +13,7 @@ elements mis en flex pour le responsive*/
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
 }
-html{
+body,html{
 margin: 0 auto;
 font-family: 'Open Sans', sans-serif; }
 }
@@ -22,11 +22,13 @@ body {
     max-width: 1361px;
     font-size: 100%;
 }
+
 strong{
-	font-family:'Fredericka the Great', cursive;
-	color:#664730;
-	font-size: 1.3rem;
+	font-weight: bold;
+		color:#664730;
+	font-size: 1rem;
 }
+
 
 i {
     padding: 0px 1vw;
@@ -66,7 +68,7 @@ left: 77.2vw;
 nav a p{
     position: absolute;
     font-size: 0.7rem;
-    top: -5.5px;
+    top: 2.5px;
     left: 78.5vw;
 }
 
@@ -111,22 +113,29 @@ nav a p{
     padding-right: 10vw;
 
 }
-#one{
-	width:100%;
-	height: 100vh;
-}
+#one #fond{
+	position: relative;
+    width: 100%;
+    height:100%;
+    opacity: 0.4;
+    z-index: 0;
+	background-color:#000;
+ }
+
 #one h1{
-	margin-top: 120px;
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 1.4rem;
-	text-align: center;
-	letter-spacing: 2px;
-	color: #664730;
+	position: relative;
+	font-family:'Fredericka the Great', cursive;
+	z-index: 2;
+	margin: 0 auto;
+    padding-top: 45vh;
+    text-align: center;
+    color: #fff;
+    font-size: 2.3rem;
 }
 #interieur{
 	width: 100%;
-	height: 65vh;
-	background-image: url(images/raw.jpeg);
+	height: 100vh;
+	background-image: url(images/bread-399286__480.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -138,13 +147,17 @@ nav a p{
 	width: 95%;
 	font-weight: normal;
 	text-align: center;
-	padding: 10px 100px 0px 100px;
+	padding: 20px 100px 0px 100px;
 	margin-top: 0;
+}
+#one p:last-child{
+	padding: 0px 100px 0px 100px;
+
 }
 #two{
 	width: 100%;
 	height: 100vh;
-	background-image: url(images/resto-bio-adam-eve.jpg);
+	background-image: url(images/melissa-belanger-544371-unsplash.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -155,17 +168,16 @@ nav a p{
 	margin:0 auto;
 	margin-bottom: 100px;
 	top: 5vh;
-	border: 15px solid transparent;
+	border: 19px solid transparent;
 	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
+	box-shadow: 2px 1px 12px 3px #ccc;
 	width: 80%;
 	height: 70vh;
 	display: flex;
 	justify-content:space-around;
 }
 #petitdej img{
-/*	position: relative;*/
-	width: 75%;
-	height: 55%;
+	height: 45%;
 	opacity: 0.9;
 	padding-left: 50px;
 
@@ -175,7 +187,7 @@ nav a p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	width: 280px;
+	width: 30vw;
 }
 
 #petitdej .menu{
@@ -183,35 +195,28 @@ nav a p{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-/*	margin-right: 60px;*/
 }
 #petitdej span{
-	position: relative;
-	z-index: 98;
-	right: 3vw;
-	top: 2.6vh;
-}
-#petitdej span:last-of-type{
-	top: -1vh;
+width: 35vw;
+text-align: center;
 }
 
-#petitdej h3,p{
-	z-index: 3;
-	position: relative;
-	z-index: 99;
+
+#petitdej h3, #petitdej p{
+	margin: 0 auto;
 	color: #664730;
 	font-weight: bold;
-	opacity: 1;
 	font-size: 1rem;
 	text-align: center;
 }
 #petitdej p{
-
+	padding-top:2vh;
 	font-weight: normal;
 
 }
 #petitdej h2{
-	margin-top:20px;
+	margin-top:5vh;
+	margin-bottom: 50px;
 	margin-left: 50px;
 	letter-spacing: 2px;
 	font-family: 'Fredericka the Great', cursive;
@@ -219,22 +224,16 @@ nav a p{
 	color: #664730;
 }
 #petitdej .encart1{
-	width: 22vw;
-	height: 5vh;
-	position: absolute;
-	z-index: 1;
-	top: 12vh;
-	left: 58%;
+padding-top:1vh;
+	width: 100%;
+	height: 6vh;
 	background-color: #81d27a;
 	opacity: 0.9;
 }
 #petitdej .encart2{
-	width: 22vw;
-	height: 5vh;
-	position: absolute;
-	z-index: 1;
-	top: 41vh;
-	left: 58%;
+	padding-top:1vh;
+	width: 100%;
+	height: 6vh;
 	background-color: #81d27a;
 	opacity: 0.9;
 }
@@ -245,18 +244,19 @@ nav a p{
 
 #dejeuner{
 	margin:0 auto;
-	margin-top: 5vh;
-	width: 99.9%;
+	margin-top: 10vh;
+	padding: 1%;
+	width: 80%;
 	height: 85vh;
-	border: 10px solid transparent;
+	border: 19px solid transparent;
 	border-image:url(images/abstract-backdrop-background-129733.jpg) 90 round;
-	box-shadow: 4px 4px 5px #bbb;
+	box-shadow: 2px 1px 12px 3px #ccc;
 
 }
 #dejeuner h2{
 	
 margin: auto;
-margin-top:20px;
+margin-top:10vh;
 text-align: center;
 letter-spacing: 2px;
 font-family: 'Fredericka the Great', cursive;
@@ -283,13 +283,6 @@ color: #664730;
 	align-items: center;
 	flex-direction: column;
 }
-#dejeuner img{
-	width: 55%;
-	height: 110%;
-	opacity: 0.9;
-	padding-top: 40px	
-}
-
 #dejeuner p{
 	z-index: 3;
 	color: #664730;
@@ -297,10 +290,12 @@ color: #664730;
 	font-weight: normal;
 }
 #dejeuner .fin{
-	width: 30vw;
+	width: 26vw;
+	margin-top: 1vh;
 	text-align: justify;
 }
 #dejeuner h3{
+	margin-top: 5vh;
 	color: #664730;
 	letter-spacing: 2px;
 	font-family: 'Fredericka the Great', cursive;
@@ -319,149 +314,131 @@ color: #664730;
 	margin: 0;
 }
 
+#dejeuner ul li:nth-child(2) img{
+	position: absolute;
+	z-index: 0;
+	opacity: 0.3;
+	height: 80vh;
+	padding-top: 22vh;
+	box-sizing: border-box;
+}
+#dejeuner ul li:nth-child(2) h3{
+	padding-top: 10vh;
+}
+
+#banniere{
+	height: 80vh;
+	width: 100vw;
+	margin-top: 10vh;
+	background-image: url(images/james-sutton-207988-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+/*partie footer*/
 
 footer {
-    padding: 2vh 1vw;
-    height: 60vh;
+    padding: 2vh;
+    background-color: #fff;
     border: 15px solid transparent;
     border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
- 
 }
 
-footer .content {
-
-	margin-top: 1vh;
-    margin-left: 1vw;
+footer .premierePartie{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
-footer .content h4 {
-    margin: 0 auto;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: 'Fredericka the Great', cursive;
-    text-align: left;
-    color: #068445;
-}
-
-footer #lieu {
-    text-align: left;
-    margin-top: 2vh;
-    margin-left: 30vw;
-}
-
-
-footer p {
-    font-size: 1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
-    color: #664730;
-}
-footer i {
-    padding: 0px;
-    font-size: 1.5rem;
-    color: #664730;
-    transition: all 0.7s ease;
-}
-
-footer .fa-facebook-f:hover {
-    color: #2c4290;
-}
-footer .fa-twitter:hover {
-    color: #1f9ceb;
-}
-footer .fa-instagram:hover {
-    color: #b70786;
-}
-footer #fbk:hover {
-    text-decoration: none;
-    color: #2c4290;
-}
-footer #twit:hover {
-    text-decoration: none;
-    color: #1f9ceb;
-}
-footer #insta:hover {
-    text-decoration: none;
-    color: #b70786;
-}
-
-footer #contact{
+footer .rubriques{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
-	margin-right: 5vw;
-    padding-left: 0;
-    margin-left: 0;
+    align-items: space-between;
+    padding-top: 2.5vh;
 }
-footer #contact h4:last-of-type{
-margin-top: 5vh;
+footer .mention{
+	margin-left: 35%;
+    display: inline-block;
+}
+footer .mention p{
+	 display: inline-block;
+	margin: auto;
+	text-align: center;
+    padding-top: 3vh;
+    font-size: 0.8rem;
+}
+footer .paiement{
+padding-top: 2.5vh;
+}
+
+footer h4 {
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #068445;
+    padding-bottom: 1vh;
+}
+footer  p{
+    font-size: 0.8rem;
+    margin-top:0;
+    margin-bottom: 0;
+    color: #664730;
+    text-align: none;
+}
+
+footer .instfdg{
 display: flex;
-flex: wrap;
-padding-right: 1vw;
-}
-footer #contact p{
-    display: flex;
-    justify-content: flex-start;
-    flex: wrap;
-    padding-right: 1vw;
-}
-
-footer .reseau {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-footer img {
-    width: 48px;
-    height: 48px;
-    transition: all 0.3s ease;
+align-items: center;
+justify-content: center;
+width: 40vw;
+margin-right: 3vw;
+margin-left: 3vw;
 
 }
-footer #livraison {
-    width: 55px;
-    height: 55px;
-    margin-right: 15vw;
 
+footer .instfdg p{
+text-align: center;
+font-size: 1rem;
 }
-footer #plan {
-	margin: 4vh 1vw;
-	height: 180px;
-	width:246px;
-	border-radius: 5px;
-    color: #fff;
-    border: 3px solid #fff;
+
+footer .instfdg i{
+padding: 0;
 }
-footer .adresse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .venir i{
-	font-size: 1.1rem;
-	color:#068445;
-}
-footer .venir{
-	padding-left: 2vw;
-}
-footer a {
+
+footer a{
     text-decoration: none;
     color: #664730;
-    align-items: center;
 }
-footer a img:hover {
-    transform: scale(1.2);
+footer a:hover{
+    text-decoration: none;
 }
-footer #presta{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 8vw;
+footer .fb-insta{
+    width: 50vw;
+    height: 100%;
+    margin-left: 3vw;
+    padding: 0;
+    background-color: #eee;
+    border: 2px solid #ddd;
+}
+footer .paiement img{
+    padding-top: 1vh;
+    width: 2vw;
+    height: 4vh;
+}
+footer .paiement .tickets{
+    width: 6vw;
+    height:4.5vh;
+}
+footer .copy{
+ 	display: inline-block;
+    width: 4%;
+    height: 4%;
+    margin-left: 0.9vw;
+    margin-right: 0.9vw;
+}
+footer #rse{
+	padding-top: 4vh;
 }
 
 /*menu burger*/
@@ -470,14 +447,15 @@ footer #presta{
 	top: 2vh;
 	position: fixed;
 	padding-top: 7px;
-    left: 44%;
+    left: 44vw;
 	width: 66px;
 	height: 35px;
     border-radius: 5px;
 	background-color: #f5fc0e;
-	z-index: 1;
+	z-index: 99;
 	cursor: pointer;
     display: none;
+    transition: 0.8s all ease-in;
 }
  #burger .trait{
 
@@ -508,18 +486,21 @@ footer #presta{
 	transform: rotate(-50deg);
 	transition: all 0.3s ease-in;
 }
+#burger.active{
+    transform: translateY(0) rotate(180deg);
+    position: absolute;
+}
 
 aside{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     top:-100vh;
     left: 25%;
     width: 45vw;
-    height: 37vh;
+    height: 40vh;
     border: 5px solid #fff;
     border-radius: 5px;
     background-color: #f5fc0e;
-    font-family: 'Fredericka the Great', cursive;
     box-shadow:  2px 2px 2px #ddd;
     transition: all 0.9s ease;
     overflow:hidden;
@@ -528,28 +509,51 @@ aside{
 aside ul{
 
     margin: 0 auto;
-    padding: 0;
-    padding-top: 17px;
+    margin-top: 5vh;
 }
 
 aside li{
-    padding: 1vh 4vw 0vh 5vw;
+    padding: 2vh 3.5vw 0vh 5vw;
     width: 100%;
     list-style: none;
 
 }
 aside a{
-    width: 100%;
+    width: 50%;
     color: #664730;
     text-decoration: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
 }
+aside #rse2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+aside #rse2 i{
+    font-size: 1.1rem;
+    margin: 4vh 4vw 2vh 4vw;
+
+}
+
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
 
+#navfixe span {
+	font-size: 0.6rem;
+    padding: 3px;
+}
+#intro .encart{
+	width: 40%
+	margin-left:20%;
+}
+#intro .description .encart p {
+    font-size: 1rem;
+    padding-bottom: 0;
+}
 
 footer{
     height: 75vh;
@@ -696,6 +700,7 @@ body{
 
 }
 #burger{
+	z-index: 99;
     display:block;
     height: 25px;
     width: 56px;
@@ -717,16 +722,16 @@ aside ul{
 }
 aside li a{
     font-size: 1rem;
-    font-weight: bold;
 text-align: center;
 }
 .active{
     overflow:visible;
-    top: 8.5vh;
-    z-index: 99;
+    top: 1vh;
+    z-index: 90;
+
  }
 #one h1{
-margin-top: 8vh;
+padding-top: 8vh;
 }
 #one p{	
 	padding: 10px 30px 0px 30px;

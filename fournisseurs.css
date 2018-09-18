@@ -16,7 +16,7 @@ elements mis en flex pour le responsive*/
 body, html{
 
 margin: 0 auto;
-font-family: 'Open Sans', sans-serif; }
+font-family: 'Open Sans', sans-serif;
 }
 body {
 width: 100vw;
@@ -110,20 +110,279 @@ nav a p{
 
 }
 
+h1{
+    margin: 0 auto;
+    padding-top: 49vh;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.2rem;
+    color: #fff;
+}
+#four{
+	height: 100vh;
+    background-image: url(images/Veggie-Stand/Snapshots/Veggie-Stand.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*présentation fournisseurs*/
+#five{
+    padding: 10vh 5vw;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+	color: #664730;
+}
+#five h3{
+    text-align: center;
+}
+
+#five img{
+    display: inline-block;
+    margin-left: 30%;
+    width: 50%;
+}
+#five div{
+    padding-left:2vw;
+    padding-right: 2vw;
+    border-right: 1px solid #eee; 
+}
+#five div:last-child{
+  border-right: none;
+}
+#five div p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+#five button{
+    margin-top: 4vh;
+    cursor: pointer;
+    background-color: #f5fc0e;
+    border: none;
+    color:#664730;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px;
+}
+#five a{
+	text-decoration: none;
+	color: #664730;
+	font-weight: bold;
+}
+#trois{
+    background-image: url(images/courier-1214227_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-size: 2.1rem;
+    font-family: 'Fredericka the Great', cursive;
+    color:#fff;
+    padding-top:40vh;
+    padding-left: 35vw;
+    font-weight: bold;
+}
+
+
+
+#three{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80vh;
+}
+
+#three p{
+    position: relative;
+    z-index: 1;
+    color: #664730;
+    font-size: 1rem;
+    line-height: 22px;
+    text-align: center;
+    padding: 2vh 4vw;  
+}
+
+#three .pitch{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#three .deliveroo{
+
+	border-right: 2px solid #664730;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#three .togoodtogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#three .fond2{
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    padding-top: 60vh;
+}
+#three a{
+    width: 200px;
+}
+
+#three #antigachi{
+width: 55%;
+position: relative;
+z-index: 1;
+}
+#three #livraison{
+width: 85%;
+position: relative;
+z-index: 1;
+}
+#three button{
+    margin-top: 4vh;
+    cursor: pointer;
+    background-color: #f5fc0e;
+    border: none;
+    color:#664730;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+	font-size: 0.9rem;
+}
+#three button:hover{
+	color:#068445;
+}
+/*partie footer*/
+
+footer {
+    padding: 2vh;
+    background-color: #fff;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
+}
+
+footer .premierePartie{
+    display: flex;
+    justify-content: space-around;
+}
+footer .rubriques{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    padding-top: 2.5vh;
+}
+footer .mention{
+	margin-left: 35%;
+    display: inline-block;
+}
+footer .mention p{
+	 display: inline-block;
+	margin: auto;
+	text-align: center;
+    padding-top: 3vh;
+    font-size: 0.8rem;
+}
+footer .paiement{
+padding-top: 2.5vh;
+}
+
+footer h4 {
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #068445;
+    padding-bottom: 1vh;
+}
+footer  p{
+    font-size: 0.8rem;
+    margin-top:0;
+    margin-bottom: 0;
+    color: #664730;
+    text-align: none;
+}
+
+footer .instfdg{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40vw;
+margin-right: 3vw;
+margin-left: 3vw;
+
+}
+
+footer .instfdg p{
+	text-align: center;
+font-size: 1rem;
+}
+
+footer .instfdg i{
+padding: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #664730;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer .fb-insta{
+    width: 50vw;
+    height: 100%;
+    margin-left: 3vw;
+    padding: 0;
+    background-color: #eee;
+    border: 2px solid #ddd;
+}
+footer .paiement img{
+    padding-top: 1vh;
+    width: 2vw;
+    height: 4vh;
+}
+footer .paiement .tickets{
+    width: 6vw;
+    height:4.5vh;
+}
+footer .copy{
+ 	display: inline-block;
+    width: 4%;
+    height: 4%;
+    margin-left: 0.9vw;
+    margin-right: 0.9vw;
+}
+footer #rse{
+	padding-top: 4vh;
+}
+
 /*menu burger*/
 
 #burger{
 	top: 2vh;
 	position: fixed;
 	padding-top: 7px;
-    left: 44%;
+    left: 44vw;
 	width: 66px;
 	height: 35px;
     border-radius: 5px;
 	background-color: #f5fc0e;
-	z-index: 1;
+	z-index: 99;
 	cursor: pointer;
     display: none;
+    transition: 0.8s all ease-in;
 }
  #burger .trait{
 
@@ -154,18 +413,21 @@ nav a p{
 	transform: rotate(-50deg);
 	transition: all 0.3s ease-in;
 }
+#burger.active{
+    transform: translateY(0) rotate(180deg);
+    position: absolute;
+}
 
 aside{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     top:-100vh;
     left: 25%;
     width: 45vw;
-    height: 37vh;
+    height: 40vh;
     border: 5px solid #fff;
     border-radius: 5px;
     background-color: #f5fc0e;
-    font-family: 'Fredericka the Great', cursive;
     box-shadow:  2px 2px 2px #ddd;
     transition: all 0.9s ease;
     overflow:hidden;
@@ -174,303 +436,33 @@ aside{
 aside ul{
 
     margin: 0 auto;
-    padding: 0;
-
+    margin-top: 5vh;
 }
 
 aside li{
-    padding: 1vh 4vw 0vh 5vw;
+    padding: 2vh 3.5vw 0vh 5vw;
     width: 100%;
     list-style: none;
 
 }
 aside a{
-    width: 100%;
+    width: 50%;
     color: #664730;
     text-decoration: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
 }
-h1{
-    margin: 0 auto;
-    padding-top: 49vh;
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 2.2rem;
-    color: #f5fc0e;
-}
-#four{
-	height: 100vh;
-    background-image: url(images/food-healthy-vegetables-potatoes.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/*prédsentation fournisseurs*/
-#five{
-    padding: 10vh 5vw;
-    width: 100vw;
-    height: 90vh;
+aside #rse2{
     display: flex;
     justify-content: space-around;
-    flex: wrap;
-	color: #664730;
-}
-#five h3{
-    text-align: center;
-}
-#five a{
-	text-decoration: none;
-	color: #81d27a;
-	font-weight: bold;
-}
-#five img{
-    display: inline-block;
-    margin-left: 100px;
-    width: 35%;
-}
-#five div{
-    padding-left:1vw;
-    padding-right: 1vw;
-    border-right: 1px solid #eee; 
-}
-#five div:last-child{
-  border-right: none;
-}
-#five div p{
-    text-align: justify;
-}
-#trois{
-    background-image: url(images/wine-1761613_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 90vh;
-    font-size: 2.1rem;
-    font-family: 'Fredericka the Great', cursive;
-    color:#f5fc0e ;
-    padding-top:40vh;
-    padding-left: 35vw;
-    font-weight: bold;
-}
-
-
-
-#three{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    height: 60vh;
-    background-color: #eee;
-}
-
-#three p{
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    font-size: 1rem;
-    line-height: 22px;
-    text-align: center;
-    padding: 2vh 4vw;  
-}
-
-#three .pitch{
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-#three .deliveroo{
-    width: 50%;
-    background-image: url(images/courier-1214227_1920.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-
+    
 }
-#three .togoodtogo{
-    display: flex;
-    width: 50%;
-    background-image: url(images/Puretc1-831x593.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-#three .fond2{
-    position: absolute;
-    z-index: 0;
-    background-color: #000;
-    opacity: 0.5;
-    width: 50%;
-    padding-top: 60vh;
-}
-#three a{
-    width: 200px;
-}
-
-#three #antigachi{
-width: 55%;
-position: relative;
-z-index: 1;
-}
-#three #livraison{
-width: 85%;
-position: relative;
-z-index: 1;
-}
-
-
-footer {
-    padding: 2vh 1vw;
-    height: 60vh;
-    border: 15px solid transparent;
-    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
- 
-}
-
-footer .content {
-
-    margin-top: 1vh;
-    margin-left: 1vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .content h4 {
-    margin: 0 auto;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: 'Fredericka the Great', cursive;
-    text-align: left;
-    color: #068445;
-}
-
-footer #lieu {
-    text-align: left;
-    margin-top: 2vh;
-    margin-left: 30vw;
-}
-
-
-footer p {
-    font-size: 1rem;
-    text-align: left;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 5px;
-    width: 25vw;
-    color: #664730;
-}
-footer i {
-    padding: 0px;
-    font-size: 1.5rem;
-    color: #664730;
-    transition: all 0.7s ease;
-}
-
-footer .fa-facebook-f:hover {
-    color: #2c4290;
-}
-footer .fa-twitter:hover {
-    color: #1f9ceb;
-}
-footer .fa-instagram:hover {
-    color: #b70786;
-}
-footer #fbk:hover {
-    text-decoration: none;
-    color: #2c4290;
-}
-footer #twit:hover {
-    text-decoration: none;
-    color: #1f9ceb;
-}
-footer #insta:hover {
-    text-decoration: none;
-    color: #b70786;
-}
-
-footer #contact{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-right: 5vw;
-    padding-left: 0;
-    margin-left: 0;
-}
-footer #contact h4:last-of-type{
-margin-top: 5vh;
-display: flex;
-flex: wrap;
-padding-right: 1vw;
-}
-footer #contact p{
-    display: flex;
-    justify-content: flex-start;
-    flex: wrap;
-    padding-right: 1vw;
-}
-
-footer .reseau {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-footer img {
-    width: 48px;
-    height: 48px;
-    transition: all 0.3s ease;
-
-}
-footer #livraison {
-    width: 55px;
-    height: 55px;
-    margin-right: 15vw;
-
-}
-footer #plan {
-    margin: 4vh 1vw;
-    height: 180px;
-    width:246px;
-    border-radius: 5px;
-    color: #fff;
-    border: 3px solid #fff;
-}
-footer .adresse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer .venir i{
+aside #rse2 i{
     font-size: 1.1rem;
-    color:#068445;
-}
-footer .venir{
-    padding-left: 2vw;
-}
-footer a {
-    text-decoration: none;
-    color: #664730;
-    align-items: center;
-}
-footer a img:hover {
-    transform: scale(1.2);
-}
-footer #presta{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 8vw;
+    margin: 4vh 4vw 2vh 4vw;
+
 }
 
 
@@ -484,7 +476,18 @@ footer #presta{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
-
+#navfixe span {
+    font-size: 0.6rem;
+    padding: 3px;
+}
+#intro .encart{
+    width: 40%
+    margin-left:20%;
+}
+#intro .description .encart p {
+    font-size: 1rem;
+    padding-bottom: 0;
+}
 
 
 }

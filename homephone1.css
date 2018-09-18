@@ -1,0 +1,1643 @@
+/*saisie des fonts en rem
+saisie des largeur en vw et vh pour le responsive
+elements mis en flex pour le responsive
+
+
+color:#664730;marron	
+	color:#f5fc0e; jaune
+	color:#068445; vert foncé
+	color:#81d27a; vert clair
+*/
+
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body,
+html {
+
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+}
+body {
+    font-size: 100%;
+ 
+}
+header .fullBackground{
+margin: 0;
+padding: 0;
+}
+
+#entete .fullBackground {
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+i {
+    padding: 0px 1vw;
+    font-size: 1.4rem;
+    color: #664730;
+    transition: all 0.7s ease;
+}
+
+/*partie hero*/
+
+header {
+    position: relative;
+    background-position: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/restaurant-rouen-terrasse-2_700_490.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+header #logo_central{
+position: relative;
+z-index: 2;
+margin: 0 auto;
+width: 300px;
+margin-top: 25vh;
+margin-left: 38%;
+}
+
+header .text {
+    position: absolute;
+    margin-left: 2vw;
+    padding-top: 40vh;
+    width: 15%;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+}
+
+header #pub {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    text-align: center;
+    bottom: -10%;
+    padding: 5%;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.fa-facebook-f:hover {
+    transform: scale(1.1);
+	color:#2c4290;
+}
+.fa-twitter:hover {
+	color:#1f9ceb;
+    transform: scale(1.1);
+}
+.fa-instagram:hover{
+	color:#b70786;
+    transform: scale(1.1);
+}
+header #fond{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #000;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.texte p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*partie navefixe*/
+#navfixe{
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    display:flex;   
+    background-color: #eee;
+    opacity: 0.8;  
+}
+#navfixe span {
+    display: flex;
+ 
+    padding: 4px;
+    height: 90px;
+    align-items: center;
+    transition:  all 0.6s ease; 
+    box-sizing: border-box;
+}
+
+#navfixe span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#81d27a;
+}
+nav a #situation{
+position: absolute;
+width: 15px;
+top: 2.5px;
+left: 77.2vw;
+}
+nav a p{
+    position: absolute;
+    font-size: 0.7rem;
+    top: 2.5px;
+    left: 78.5vw;
+}
+
+#navfixe #menu{
+    padding-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navfixe #logo {
+    width: 90px;
+    padding-bottom: 10px;
+    padding-left: 2vw;
+}
+#navfixe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #664730;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#navfixe #presta{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding-left: 3vw;
+     margin-right: 2vw;
+
+}
+
+#navfixe #presta img:last-of-type{
+
+    width: 50px;
+}
+
+#navfixe #rse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 10vw;
+
+}
+
+/*Partie présentation*/
+#intro {
+    height: 100vh;
+    
+}
+
+#intro .description{
+    height: 65vh;
+    background-image: url(images/luis-angel-cardoza-rojas-197878-unsplash.jpg);
+    transition: all 0.7s ease-in;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#intro .encart {
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    width: 55vw;
+    height: 50vh;
+    background-color: #068445;
+    border-radius: 5px;
+    border: 5px solid #fff;
+}
+h1 {
+    position: relative;
+    bottom: 55vh;
+    left: 38vw;
+    margin: 0;
+    padding:0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Fredericka the Great', cursive;
+} 
+#intro p {
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    bottom: 28vh;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+/*mise en avant des valeurs*/
+
+#valeur{
+    width: 100%;
+    height: 35vh;
+
+
+}
+#valeur ul{
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+}
+#valeur ul li{
+    width: 350px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.7vh 3vw 1.5vh 3vw;
+   text-align: center;
+   color:#664730;
+   font-weight: bold;
+   margin-bottom: 10vh;
+
+}
+#valeur li img{
+    padding-bottom: 1vh;
+    height: 35%;
+    transition: 1.5s all ease-in-out;
+
+}
+.active .animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.active .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+.delay{
+    
+     animation-delay: 0.2s;
+
+}
+.delay-1{
+     animation-delay: 0.5s;
+
+}
+.delay-2{
+     animation-delay: 0.7s;
+
+}
+.delay-3{
+     animation-delay: 1s;
+
+}
+
+button{
+    height: auto;
+    margin-top: 2vh;
+    cursor: pointer;
+    background-color: #f5fc0e;
+    border: none;
+    color:#664730;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+}
+button:hover{
+    color:#068445;
+}
+
+/*plan*/
+
+#position{
+    position: relative;
+    background-image: url(images/pexels-photo-890577.jpeg);
+   background-position: top;
+   background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0; 
+    height: 90vh;
+}
+
+#position #map{
+
+transition: 0.3s all ease;
+position: relative;
+top: -15vh;
+margin-left: 31%;
+}
+/*//map custom//*/
+#map {
+    height: 56%;
+    width: 40%;
+  }
+
+#position h2{
+    margin: auto;
+    margin-top: 15vh;
+    padding-top: 25VH;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color:#f5fc0e;
+    z-index: 1;
+}
+#position .fondnoir{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    opacity: 0.6;
+    width: 100vw;
+    height: 100%;
+
+
+}
+#position #trouver{
+    position: relative;
+    left: 4vw;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#position #trouver img{
+    width: 5%;
+    margin: 0;
+    padding:0;
+}
+#position p, #position i{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#position .venir div:nth-of-type(2){
+    margin-top: 7vh;
+}
+
+#position .droite{
+    width: 300px;
+}
+
+
+/*espace citation*/
+
+#citation {
+    height: 90vh;
+}
+#citation p {
+    margin-top: 35vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #664730;
+    font-size: 1.7rem;
+    text-align: center;
+}
+#citation p em {
+    font-size: 1.3rem;
+}
+#citation i {
+    padding: 0 25px;
+}
+#citation i:before {
+    font-size: 25px;
+    color: #664730;
+}
+#citation .cit {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#citation img {
+    width: 40px;
+}
+#citation span {
+    width: 450px;
+    border-bottom: 1px solid #664730;
+}
+#citation h3 {
+    margin-top: 50px;
+    color: #664730;
+    font-size: 1.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+#citation .arrowbottom {
+    margin-left: 45%;
+    width: 140px;
+    animation-name: bounce;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+@keyframes bounce{
+0%{
+	transform: translateY(0);}
+100%{
+	transform: translateY(6px);}
+
+}
+
+
+/*partie présentation plat à la une*/
+
+#cejour {
+    
+    background-image: url(images/basil-932079__480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10vh;
+}
+
+#cejour .ligne{
+    position: absolute;
+	z-index: 0;
+	height: 80vh;
+	width: 1vw;
+	left: 28vw;
+	border-right: 1px solid #fff;
+}
+#cejour .ligne2{
+	left: 69vw;
+}
+#cejour .ardoise {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cejour .ardoise .menu {
+    width: 400px;
+    height: 280px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #fff;
+    border: 19px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
+}
+#cejour .menu .tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+#cejour img:first-of-type {
+    width: 20%;
+}
+#cejour .ardoise p {
+    padding: 0px 9px 0 12px;
+    font-size: 1rem;
+    color: #664730;
+}
+
+#cejour .menu h5{
+    margin:35px;
+    font-weight: bold;
+}
+#cejour #photo1 {
+    width: 90%!important;
+    margin-top: 11px;
+    margin-left: 11px;
+    transition: 0.4 all ease-in-out;
+}
+#cejour #photo2 {
+    width: 90%!important;
+ 	margin-top: 8px;
+    margin-left: 11px;
+
+}
+.ardoise .photoa{
+    position: relative;
+	margin-top: 12vh;
+	width:20%;
+	height: 29%;
+	background-color:#fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-bottom: 25px;
+	transition: all 0.4s ease-in-out;
+	transform: rotate(25deg);
+
+}
+.ardoise .photoa.float-left{
+   left: -10vw;
+}
+.ardoise .photoa.float-right{
+    right: -10vw;
+}
+.conteneur{
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	color: #664730;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	text-shadow: 1px 1px 2px #ddd;
+}
+.photoa:hover{
+	transform: rotate(0);
+     transform: scale(1.2)
+}
+/*partie footer*/
+
+footer {
+    padding: 2vh;
+    background-color: #fff;
+    border: 15px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg)90 round;
+}
+
+footer .premierePartie{
+    display: flex;
+    justify-content: space-around;
+}
+footer .rubriques{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    padding-top: 2.5vh;
+}
+footer .mention{
+    margin-left: 35%;
+    display: inline-block;
+}
+footer .mention p{
+     display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding-top: 3vh;
+    font-size: 0.8rem;
+}
+footer .paiement{
+padding-top: 2.5vh;
+}
+
+footer h4 {
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #068445;
+    padding-bottom: 1vh;
+}
+footer  p{
+    font-size: 0.8rem;
+    margin-top:0;
+    margin-bottom: 0;
+    color: #664730;
+    text-align: none;
+}
+
+footer .instfdg{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40vw;
+margin-right: 3vw;
+margin-left: 3vw;
+
+}
+
+footer .instfdg p{
+    text-align: center;
+font-size: 1rem;
+}
+
+footer .instfdg i{
+padding: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #664730;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer .fb-insta{
+    width: 50vw;
+    height: 100%;
+    margin-left: 3vw;
+    padding: 0;
+    background-color: #eee;
+    border: 2px solid #ddd;
+}
+footer .paiement img{
+    padding-top: 1vh;
+    width: 2vw;
+    height: 4vh;
+}
+footer .paiement .tickets{
+    width: 6vw;
+    height:4.5vh;
+}
+footer .copy{
+    display: inline-block;
+    width: 4%;
+    height: 4%;
+    margin-left: 0.9vw;
+    margin-right: 0.9vw;
+}
+footer #rse{
+    padding-top: 4vh;
+}
+
+/*menu burger*/
+
+#burger{
+	top: 2vh;
+	position: fixed;
+	padding-top: 7px;
+    left: 44%;
+	width: 66px;
+	height: 35px;
+    border-radius: 5px;
+	background-color: #f5fc0e;
+	z-index: 99;
+	cursor: pointer;
+    display: none;
+}
+ #burger .trait{
+
+	display: block;
+	width: 26px;
+	margin-left: 20px;
+	margin-top: 4px;
+	background-color: #000;
+	height: 2px;
+	border-radius: 2px;
+}
+#burger:hover .tr1{
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(50deg);
+	opacity: 0.8;
+	transition: all 0.3s;
+}
+#burger:hover .tr2{
+	display: none;
+}
+#burger:hover .tr3{
+	opacity: 0.8;
+	margin-top: 10px;
+	position: absolute;
+	transform:translateY(0);
+	transform: rotate(-50deg);
+	transition: all 0.3s ease-in;
+}
+
+aside{
+    position: fixed;
+    z-index: 2;
+    top:-100vh;
+    left: 25%;
+    width: 45vw;
+    height: 40vh;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    background-color: #f5fc0e;
+    font-family: 'Fredericka the Great', cursive;
+    box-shadow:  2px 2px 2px #ddd;
+    transition: all 0.9s ease;
+    overflow:hidden;
+
+}
+aside ul{
+
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+aside li{
+    padding: 1vh 4vw 0vh 5vw;
+    width: 100%;
+    list-style: none;
+
+}
+aside a{
+    width: 50%;
+    color: #664730;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+#navfixe span {
+    font-size: 0.6rem;
+    padding: 3px;
+}
+
+#intro .encart{
+    width: 40%
+    margin-left:20%;
+}
+#navfixe #rse{ 
+    padding-left: 4vw;
+    padding-right: 5vw;
+
+}
+#navfixe #presta img:last-of-type{
+    width: 40px;
+   
+}
+i { 
+    font-size: 1.1rem;
+}
+
+#intro .description .encart p {
+    font-size: 1rem;
+    padding-bottom: 0;
+}
+
+.ardoise .menu {
+    width: 40%;
+    height: 30%;
+}
+#cejour .menu h5{
+font-size: 1rem;
+margin: 15px;
+}
+#cejour .ardoise .menu {
+    
+    border: 10px solid transparent;
+    border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
+}
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+#navfixe span {
+    font-size: 0.6rem;
+    padding: 3px;
+    text-align: center;
+}
+
+
+nav a #situation{
+
+width: 10px;
+
+}
+nav a p{
+    position: absolute;
+    font-size: 0.6rem;
+}
+
+#navfixe #menu{
+    padding-left: 2vw;
+
+    width: 80vw;
+    
+}
+#navfixe #presta{
+     padding-left: 2vw;
+    box-sizing: border-box;
+}
+
+#navfixe #presta img:last-of-type{
+    width: 30px;
+   
+}
+
+#navfixe #rse{ 
+    padding-left: 4vw;
+    padding-right: 5vw;
+
+}
+i {
+    
+    font-size: 1rem;
+    
+}
+
+header #logo_central{
+    margin-left:30%; 
+}
+
+#intro .encart {
+    height: 60vh;
+}
+#intro .description .encart p{
+    font-size: 1rem;
+    padding: 1vh 1vw 0vh 1vw;
+}
+h1{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+}
+#intro span{
+    top:-140px;
+    left: 35vw;
+}
+
+#valeur li img{
+    height: 25%;
+}
+
+#position #map{
+top: -70vh;
+margin-left: 50%;
+margin-right: 5%;
+}
+
+#map {
+    height: 54%;
+    width: 48%;
+  }
+
+#position #trouver{
+    margin-top: 2vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#position .venir div{
+    margin-top: 1vh;
+}
+#position p, #position i{
+    font-size: 1rem;
+}
+
+#position p{
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+#position h2{
+    margin-top: 30vh;
+    padding-top: 19VH;
+    
+}
+#citation p {
+    width: 90%;
+    text-align: center;
+    padding:1vh 3vw; 
+    font-size: 1.5rem;
+
+}
+#citation p em {
+    font-size: 1.1rem;
+}
+
+#citation p i{
+    font-size: 1rem;
+}
+
+
+#citation .arrowbottom{
+    margin-left: 40%;
+    cursor: pointer;
+}
+#cejour .ardoise{
+   padding-top: 10vh;
+}
+
+#cejour .ardoise .menu {
+    width: 400px;
+    padding: 0%;
+    margin-left: 1vw;
+    margin-right: 1vw;  
+}
+#cejour .ligne2{
+   padding-left: 5vw;
+}
+
+.ardoise img:first-of-type {
+    width: 90px;
+    margin-left:10px;
+}
+.menu h5{
+    color: #fff;
+    font-size: 1rem;
+}
+#cejour .ardoise .menu p {
+    text-align: left;
+    font-size: 0.9rem;
+
+}
+
+.ardoise .lien a {
+    margin-top: 5vh;
+    top: 0px;
+    left: 90px;
+    border: 2 solid #fff;
+}
+
+
+#photo1 {
+    width: 90%!important;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+#photo2 {
+    width: 90%!important;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ardoise .photoa{
+    position: relative;
+    margin-top: 12vh;
+    width:35%;
+    height: 44%;
+    background-color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    transform: rotate(25deg);
+}
+.ardoise .photoa .float-left{
+   left: -10vw;
+}
+.ardoise .photoa .float-right{
+    right: -10vw;
+}
+.conteneur{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    color: #664730;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px #ddd;
+}
+.photoa:hover{
+    transform: rotate(0) scale(1.2);
+}
+
+
+footer{
+    height: 45vh;
+}
+footer .content{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+footer  #lieu{
+    text-align: center;
+    margin: 0 auto;
+}
+footer h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0vh;
+    margin-top: 1vh;
+}
+
+footer .instfdg{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55vw;
+margin-right: 0vw;
+margin-left: 2vw;
+
+}
+
+footer .instfdg p{
+    width: 30%;
+text-align: center;
+font-size: 0.9rem;
+}
+
+
+}
+
+
+
+
+@media screen and (min-width: 469px) and (max-width: 767px){
+
+#burger{
+    display:block;
+    height: 25px;
+    width: 56px;
+    padding-top: 3px;
+}
+#burger .trait{
+   margin-left: 15px;
+    margin-top: 3px;
+}
+aside{
+    height: auto;
+    width: 240px;
+}
+aside ul{
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
+}
+aside li a{
+    font-size: 1rem;
+text-align: center;
+}
+aside li a:hover{
+    text-decoration: none;
+    color: #068445;
+}
+
+.active{
+    overflow:visible;
+    top: 0vh;
+ }
+ 
+
+ header #fond{
+    width: 100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.7;
+ }
+header .text{
+    border:none;
+}
+header .text  h2{
+    width: 100vw;
+    top: -45vh;
+    left: -5vw;
+font-size: 1.1rem;
+font-weight: bold;
+    color: #fff;
+}
+header #logo_central{
+    margin: 0 auto;
+    margin-top: 15vh;
+    margin-left: 32vw;
+    width: 30%;
+}
+header #slogan{
+      width: 100%;
+      font-weight: bold;
+      color: #f5fc0e;
+      left: 0%;
+    margin-top: 20vh;
+}
+
+header .texte p{
+    font-size: 1rem;
+    width: 90vw;
+    top: -20vh;
+
+}
+header .texte img{
+display: none;
+
+}
+header #pub{
+    display: none;
+}
+
+body{
+    font-size: 120%;
+}
+
+
+#navfixe{
+    top: -2000vh;
+    display: none;
+
+}
+#intro .description{
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+#intro .description .encart {
+   padding: 5vh 4vw 4vh 3vw;
+    height: auto;
+    width: 80%;
+}
+#intro .description .encart p{
+    font-size: 1rem;
+    padding: 1vh 1vw 0vh 1vw;
+}
+h1{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+}
+
+
+#valeur li img{
+  padding-bottom: 1vh;
+    height: 20%;
+    transition: 1.5s all ease-in-out;
+
+}
+
+
+button{
+
+    height: auto;
+    margin-bottom: 10vh;
+    
+}
+
+
+#position #map{
+top: -66vh;
+margin-left: 53%;
+}
+
+#map {
+    margin-right: 2vw;
+    width: 45%;
+  }
+
+#position #trouver{
+    margin-top: 2vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#position p, #position i{
+    font-size: 0.9rem;
+}
+
+#position p{
+    width: 80%;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+#position h2{
+    margin-top: 30vh;
+    padding-top: 10VH;
+    
+}
+#position .venir div:nth-of-type(2) {
+margin-top: 2vh;
+}
+#citation{
+    margin-top: 0vh;
+}
+
+#citation p {
+    font-size: 1.4rem;
+    padding:0 5vw 0 5vw;
+}
+#citation p em {
+    font-size: 1.1rem;
+}
+
+#citation i:before {
+    font-size: 20px;
+}
+
+#citation img {
+    width: 30px;
+}
+
+#citation h3 {
+    font-size: 1.4rem;
+    
+}
+#citation .arrowbottom {
+    display: none;  
+}
+
+#cejour .menu img{
+    width: 20%; 
+}
+
+#cejour .ardoise .menu {
+    width: 300px;
+    height: auto;
+    padding: 0%;
+    margin-left: 1vw;
+    margin-right: 1vw;  
+    border: 10px solid transparent;
+   border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
+}
+#cejour .menu  h5{
+  margin-top: 3vh;
+    font-size: 1rem;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+}
+#cejour .ardoise p:last-child{
+    padding: 0;
+}
+
+#cejour .menu strong{
+    margin: 25vh 2vw 4vh 20vw;
+}
+
+.ligne, .ligne2{
+    display: none;
+}
+
+.photoa{
+display: none;
+
+}
+footer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .instfdg{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 55vw;
+margin-right: 0vw;
+margin-left: 2vw;
+
+}
+
+footer .instfdg p{
+font-size: 0.8rem;
+}
+
+
+}
+
+
+@media screen and (max-width: 468px){
+
+#burger{
+    display:block;
+    height: 25px;
+    width: 56px;
+    padding-top: 3px;
+}
+#burger .trait{
+   margin-left: 15px;
+    margin-top: 3px;
+}
+aside{
+    height: auto;
+    width: 240px;
+}
+aside ul{
+    padding-top: 2%;
+    text-align: left;
+    padding-left: 12%;
+}
+aside li a{
+    font-size: 1rem;
+text-align: center;
+}
+aside li a:hover{
+    text-decoration: none;
+    color: #068445;
+}
+
+.active{
+    overflow:visible;
+    top: 0vh;
+ }
+ 
+
+ header #fond{
+    width: 100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.7;
+ }
+header .text{
+    border:none;
+}
+header .text  h2{
+    width: 100vw;
+    top: -45vh;
+    left: -5vw;
+font-size: 1.1rem;
+font-weight: bold;
+    color: #fff;
+}
+header #logo_central{
+    margin: 0 auto;
+    margin-top: 15vh;
+    margin-left: 32vw;
+    width: 30%;
+}
+header #slogan{
+      width: 100%;
+      font-weight: bold;
+      color: #f5fc0e;
+      left: 0%;
+    margin-top: 20vh;
+}
+
+header .texte p{
+    font-size: 1rem;
+    width: 90vw;
+    top: -20vh;
+
+}
+header .texte img{
+display: none;
+
+}
+header #pub{
+    display: none;
+}
+
+body{
+    font-size: 120%;
+}
+
+
+#navfixe{
+    top: -2000vh;
+    display: none;
+
+}
+#intro .description{
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+#intro .description .encart {
+   padding: 5vh 4vw 4vh 3vw;
+    height: auto;
+    width: 80%;
+}
+#intro .description .encart p{
+    font-size: 1rem;
+    padding: 0vh 1vw 0vh 0vw;
+}
+h1{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: #f5fc0e;
+    font-size: 1.3rem;
+}
+#valeur ul{
+   margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#valeur ul li{
+    margin-bottom: 1vh;
+}
+
+
+#valeur li img{
+  padding-bottom: 1vh;
+    height: 8vh;
+    transition: 1.5s all ease-in-out;
+
+}
+
+
+button{
+
+    height: auto;
+    margin-bottom: 1vh;
+    
+}
+
+
+#position #map{
+top: 1vh;
+margin-left: 5vh;
+}
+
+#map {
+    width: 80%;
+    height: 35%;
+}
+
+#position #trouver{
+    margin-top: 2vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#position p, #position i{
+    font-size: 0.9rem;
+}
+
+#position p{
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+#position h2{
+    font-size: 1.3rem;
+    padding-top: 1vh;
+    margin-top: 0vh;
+    
+}
+
+#position .venir div:nth-of-type(2) {
+margin-top: 2vh;
+}
+
+#citation{
+    margin-top: 0vh;
+}
+
+#citation p {
+    font-size: 1.4rem;
+    padding:0 5vw 0 5vw;
+}
+#citation p em {
+    font-size: 1.1rem;
+}
+
+#citation i:before {
+    font-size: 20px;
+}
+
+#citation img {
+    width: 30px;
+}
+
+#citation h3 {
+    font-size: 1.4rem;
+    
+}
+#citation .arrowbottom {
+    display: none;  
+}
+
+#cejour .menu img{
+    width: 20%; 
+}
+#cejour .menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#cejour .ardoise{
+    padding-top: 2vh;
+}
+
+#cejour .ardoise .menu {
+    width: 300px;
+    height: auto;
+    padding: 0%;
+    margin: 0vh 1vw 4vh 1vw;  
+    border: 10px solid transparent;
+   border-image: url(images/abstract-backdrop-background-129733.jpg) 30 round;
+}
+#cejour .menu  h5{
+  margin-top: 3vh;
+    font-size: 1rem;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+}
+#cejour .ardoise p:last-child{
+    padding: 0;
+}
+
+#cejour .menu strong{
+    margin: 25vh 2vw 4vh 20vw;
+}
+
+
+.ligne, .ligne2{
+    display: none;
+}
+
+.photoa{
+display: none;
+
+}
+footer .content{
+    padding: 0vh 4vw;
+}
+footer .premierePartie{
+    padding-top: 0;
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+footer .instfdg{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 96vw;
+height: 45vh;
+
+
+}
+
+footer .instfdg p{
+    width: 80vw;
+font-size: 0.8rem;
+text-align: center;{
+
+}
+
+footer .mention{
+    display: inline-block;
+    font-style: 0.7rem;
+}
+
+footer .paiement img{
+    padding-top: 1vh;
+    height: 11vh;
+}
+footer .paiement .tickets{
+    height: 11vh;
+}
+
+
+}
